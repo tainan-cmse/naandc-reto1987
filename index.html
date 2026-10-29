@@ -386,12 +386,13 @@ function show(id){ ['intro','play','end'].forEach(x=>$('#'+x).hidden = x!==id); 
 function intro(){
   stopTimer(); show('intro');
   const r = $('#resume'); const parts=[];
-  for(const k of ['jh','sh']) if(S[k] && Object.keys(S[k].done).length) parts.push(`<button data-track="${k}">繼續${k==='jh'?'國中':'高中'}版（已解密 ${Object.keys(S[k].done).length}/${Q[k].length}）</button>`);
+  for(const k of ['jh','sh']) if(S[k] && Object.keys(S[k].done).length) { const n=Object.keys(S[k].done).length, v=k==='jh'?'國中':'高中'; parts.push(n>=Q[k].length ? `<button data-track="${k}">查看${v}版通行證（已完成）</button>` : `<button data-track="${k}">繼續${v}版（已解密 ${n}/${Q[k].length}）</button>`); }
   r.hidden = !parts.length; r.innerHTML = '上次的進度：' + parts.join('　');
 }
 function start(k){
   track = k; const t = T(); idx = Math.min(t.i||0, Q[k].length-1);
   $('#trackBadge').textContent = k==='jh' ? '國中' : '高中';
+  if(Q[k].every(q=>t.done[q.no])){ finish(); return; }  // 已完成的直接回到通行證
   show('play'); render(); startTimer();
 }
 function startTimer(){ stopTimer(); timer = setInterval(()=>{ T().t++; if(T().t%5===0) save(); stats(); },1000); }
