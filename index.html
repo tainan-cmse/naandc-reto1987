@@ -191,6 +191,27 @@ button{font:inherit;color:inherit}
 .ans p{margin:2px 0;font-size:14.5px;white-space:pre-wrap;overflow-wrap:anywhere}
 .ans p span{color:var(--muted)}
 .end-actions{display:flex;gap:12px;flex-wrap:wrap}
+.board{background:var(--paper);border:3px solid var(--ink);box-shadow:8px 8px 0 rgba(31,38,38,.45);padding:18px 20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.board h3{font-size:22px}
+.board .big{display:flex;flex-wrap:wrap;gap:12px}
+.board .big div{flex:1 1 180px;border:2px solid var(--ink);background:#fff;padding:8px 14px}
+.board .big small{display:block;color:var(--muted);font-size:13px}
+.board .big b{font-family:var(--f-type);font-size:30px;font-variant-numeric:tabular-nums}
+.board .big b em{font-style:normal;font-size:16px;color:var(--muted)}
+.lb{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}
+.lb th,.lb td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--line)}
+.lb th{font-size:13px;color:var(--muted);font-weight:700}
+.lb tr.me td{background:#fdeede;font-weight:700}
+.lb td:nth-child(3){white-space:nowrap}
+.lb td:first-child{font-family:var(--f-type);font-weight:700;width:3em}
+.lbwrap{overflow-x:auto}
+.bars{display:flex;flex-direction:column;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(0,9em) minmax(0,1fr) 3.5em;gap:10px;align-items:center;font-size:14.5px}
+.bar .tr{height:16px;background:var(--paper-2);border:1.5px solid var(--ink)}
+.bar .tr i{display:block;height:100%;background:var(--teal)}
+.bar.me .tr i{background:var(--orange)}
+.bar span:last-child{font-family:var(--f-type);text-align:right}
+.board .note{font-size:13.5px;color:var(--muted);margin:0}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:8px 18px;font-weight:700;z-index:20;border:2px solid #fff;max-width:calc(100% - 32px)}
 footer{font-size:12.5px;color:rgba(255,255,255,.9);text-align:center}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -256,20 +277,22 @@ footer{font-size:12.5px;color:rgba(255,255,255,.9);text-align:center}
         </div>
         <div class="r">
           <div class="who">
-            <div class="field"><label for="stuName">姓名</label><input id="stuName" autocomplete="off"></div>
-            <div class="field"><label for="stuClass">學校／班級／座號</label><input id="stuClass" autocomplete="off"></div>
+            <div class="field"><label for="stuClass">班級代碼（老師提供，例如 MD-301）</label><input id="stuClass" autocomplete="off" maxlength="20"></div>
+            <div class="field"><label for="stuName">暱稱或座號（會顯示在排行榜）</label><input id="stuName" autocomplete="off" maxlength="20"></div>
           </div>
           <div class="kv" id="kv"></div>
           <div class="ans" id="ans"></div>
         </div>
       </div>
+      <div class="board" id="board" hidden></div>
       <div class="end-actions">
+        <button class="btn orange" id="sendBtn" hidden>送出成績，看我的排名</button>
         <button class="btn primary" id="copyBtn">複製我的作答</button>
-        <button class="btn orange" id="imgBtn">存成圖片</button>
+        <button class="btn" id="imgBtn">存成圖片</button>
         <button class="btn" id="backBtn">回去修改</button>
         <button class="btn" id="againBtn">換一版再玩</button>
       </div>
-      <p style="margin:0;font-size:14px;color:#fff">可以把複製的文字貼給老師，或存成圖片上傳。若按鈕沒有反應，請直接截圖這張通行證。</p>
+      <p style="margin:0;font-size:14px;color:#fff">填好班級代碼和暱稱後按「送出成績」，就能看到自己的排名和同學的想法。也可以把複製的文字貼給老師，或存成圖片上傳；若按鈕沒有反應，請直接截圖這張通行證。</p>
     </div>
   </section>
 
@@ -339,6 +362,8 @@ const Q = {
  ]
 };
 const MIN_CHARS = 4;
+// Google 試算表 Apps Script 網頁應用程式網址；留空就不送出成績
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxyS1KPBnXOEB2A3CfXqCCRIO0SfocnSJ3xNnz-0gN8P8z9oA1C3g0aFDOGEJ7d0087/exec';
 const KEY = 'return1987-worksheet-v1';
 const $ = s => document.querySelector(s);
 let S = load() || {};
@@ -569,9 +594,72 @@ function finish(){
     `<div><small>作答時間</small><b>${fmt(t.t)}</b></div>`;
   $('#ans').innerHTML = answerList().map(s=>`<section><h3>${esc(s.title)}</h3>${s.rows.map(r=>`<p><span>${esc(r[0])}${sep(r[0])}</span>${esc(r[1])}</p>`).join('')}</section>`).join('');
   $('#stuName').value = S.name||''; $('#stuClass').value = S.cls||'';
+  $('#sendBtn').hidden = !ENDPOINT.startsWith('https://'); $('#board').hidden = true;
+  if(t.sent) loadBoard();
 }
 $('#stuName').addEventListener('input',e=>{ S.name=e.target.value; save(); });
 $('#stuClass').addEventListener('input',e=>{ S.cls=e.target.value; save(); });
+
+function cid(){ if(!S.cid) { S.cid = Date.now().toString(36)+Math.random().toString(36).slice(2,8); save(); } return S.cid+'-'+track; }
+function payload(){
+  const t=T(), qs=Q[track], mcQs=qs.filter(q=>q.type!=='open');
+  const first = no => { const m=t.mc[no]; return m&&m.tried.length ? KEYS[m.tried[0]] : ''; };
+  const opn = (no,k) => { const v=(t.open[no]||{}); return v[k] ? v[k]+(v[k+'_other']?'：'+v[k+'_other']:'') : ''; };
+  return { id:cid(), track, cls:(S.cls||'').trim(), nick:(S.name||'').trim(), seconds:t.t,
+    first: mcQs.filter(q=>t.first[q.no]).length, mcTotal: mcQs.length, miss:t.miss,
+    stance: track==='sh'?opn(3,'stand'):'', pick: track==='jh'?opn(6,'pick'):opn(4,'mv'),
+    f1: track==='jh'?first(1):'', f2: track==='jh'?first(2):'', f3: track==='jh'?first(3):'',
+    f4: track==='jh'?(t.first[4]?'一次成功':'修正'):'',
+    answers: answerList().map(a=>a.rows.map(r=>r[0]+sep(r[0])+r[1]).join('\n')) };
+}
+$('#sendBtn').addEventListener('click',async()=>{
+  if(!(S.cls||'').trim()){ toast('請先填班級代碼'); $('#stuClass').focus(); return; }
+  if(!(S.name||'').trim()){ toast('請先填暱稱或座號'); $('#stuName').focus(); return; }
+  const b=$('#sendBtn'); b.disabled=true; b.textContent='送出中…';
+  try{
+    const r = await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload())});
+    const d = await r.json(); T().sent=1; save(); renderBoard(d,true); toast('成績已送出');
+  }catch(e){ toast('送出失敗，請確認網路後再試一次'); }
+  b.disabled=false; b.textContent='重新送出成績';
+});
+async function loadBoard(){
+  if(!ENDPOINT.startsWith('https://')) return;
+  try{ const u=ENDPOINT+'?track='+track+'&cls='+encodeURIComponent((S.cls||'').trim())+'&id='+encodeURIComponent(cid());
+    const d=await (await fetch(u)).json(); renderBoard(d); $('#sendBtn').textContent='重新送出成績'; }catch(e){}
+}
+function bars(obj,mineKey){
+  const tot=Object.values(obj||{}).reduce((a,b)=>a+b,0); if(!tot) return '<p class="note">還沒有資料</p>';
+  return '<div class="bars">'+Object.entries(obj).sort((a,b)=>b[1]-a[1]).map(([k,v])=>{ const pc=Math.round(100*v/tot);
+    return `<div class="bar${mineKey&&k===mineKey?' me':''}"><span>${esc(k)}</span><span class="tr"><i style="width:${pc}%"></i></span><span>${pc}%</span></div>`; }).join('')+'</div>';
+}
+function lbTable(list){
+  if(!list||!list.length) return '<p class="note">還沒有資料</p>';
+  return '<div class="lbwrap"><table class="lb"><thead><tr><th>名次</th><th>暱稱</th><th>班級</th><th>'+(track==='jh'?'一次答對':'完成順序')+'</th><th>時間</th></tr></thead><tbody>'+
+    list.map((r,i)=>`<tr class="${r.me?'me':''}"><td>${i+1}</td><td>${esc(r.nick)}${r.me?'（你）':''}</td><td>${esc(r.cls||'')}</td><td>${track==='jh'?r.first+'/4':'第'+(r.order||i+1)+'位'}</td><td>${fmt(r.sec||0)}</td></tr>`).join('')+'</tbody></table></div>';
+}
+function renderBoard(d,scroll){
+  const el=$('#board'); const p=payload(); let h='';
+  if(track==='jh'){
+    h += `<h3>我的排名</h3><div class="big">
+      <div><small>班級 ${esc(p.cls)} 排名</small><b>${d.rankClass||'–'}<em> / ${d.classTotal||0} 人</em></b></div>
+      <div><small>全部國中生排名</small><b>${d.rankAll||'–'}<em> / ${d.total||0} 人</em></b></div></div>
+      <p class="note">排名依「一次答對題數」，同分時作答時間短的在前。</p>
+      <h3>班級排行榜</h3>${lbTable(d.topClass)}
+      <h3>全站排行榜</h3>${lbTable(d.topAll)}
+      <h3>大家的選擇：最難適應的規定</h3>${bars(d.pickClass&&Object.keys(d.pickClass).length?d.pickClass:d.pickAll,p.pick)}`;
+  } else {
+    h += `<h3>我的完成順序</h3><div class="big">
+      <div><small>班級 ${esc(p.cls)}</small><b>第 ${d.rankClass||'–'}<em> 位完成 / ${d.classTotal||0} 人</em></b></div>
+      <div><small>全部高中生</small><b>第 ${d.rankAll||'–'}<em> 位完成 / ${d.total||0} 人</em></b></div></div>
+      <p class="note">高中版都是思考題，沒有標準答案，所以依完成先後排序，並和同學比較想法。</p>
+      <h3>如果在1987年，你們班的立場</h3>${bars(d.stanceClass,p.stance)}
+      <h3>全部高中生的立場</h3>${bars(d.stanceAll,p.stance)}
+      <h3>大家選的社會運動</h3>${bars(d.pickClass&&Object.keys(d.pickClass).length?d.pickClass:d.pickAll,p.pick)}
+      <h3>班級完成順序</h3>${lbTable(d.topClass)}`;
+  }
+  el.innerHTML=h; el.hidden=false;
+  if(scroll) el.scrollIntoView({behavior:'smooth',block:'start'});
+}
 $('#backBtn').addEventListener('click',()=>{ show('play'); render(); startTimer(); });
 $('#againBtn').addEventListener('click',()=>start(track==='jh'?'sh':'jh'));
 function plainText(){
