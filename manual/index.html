@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="《重返1987：解嚴檔案行動展》展架（日字型、Z字型、口字型）組裝說明書與借展問答。">
+<title>展架組裝說明書｜重返1987 解嚴檔案行動展</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap">
+<style>[hidden]{display:none!important}
+img{max-width:100%}
+.toc a.home{display:block;border-bottom:0;margin-bottom:14px;color:var(--path);font-weight:700}
+.eyebrow a{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor}
+.fb{margin-top:26px;border:1.5px solid var(--path);background:var(--panel);padding:16px 18px}
+.fb-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.fb-head h3{margin:0;font-size:19px}
+.fb-tag{font-family:var(--mono);font-size:12px;color:var(--path)}
+.qa{margin:8px 0 14px;display:flex;flex-direction:column;gap:6px}
+.qa-item{border:1px solid var(--line);background:var(--paper);padding:8px 12px}
+.qa-item summary{cursor:pointer;font-weight:700}
+.qa-item .ans{margin-top:6px;font-size:15px}
+.fbform{display:flex;flex-direction:column;gap:10px;border-top:1px dashed var(--line);padding-top:12px}
+.fbgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.fbform .f{display:flex;flex-direction:column;gap:3px;min-width:0}
+.fbform .f span{font-size:13px;color:var(--muted)}
+.fbform input,.fbform textarea{font:inherit;font-size:15px;padding:7px 9px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);width:100%}
+.fbform textarea{resize:vertical}
+.fbrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fbbtn{font:inherit;font-weight:700;border:0;border-radius:4px;background:var(--path);color:var(--panel);padding:8px 18px;cursor:pointer}
+.fbbtn:disabled{opacity:.5;cursor:not-allowed}
+.fbmsg{font-size:14px;color:var(--muted)}
+.mine{list-style:none;padding:0;margin:4px 0 0;font-size:14px}
+.mine li{padding:4px 0;border-bottom:1px dotted var(--line)}
+.mine li small{display:block;color:var(--muted);font-size:12px}
+.mine .mine-h{font-weight:700;color:var(--muted);border-bottom:0}
+
+/* Layout: a workshop binder — narrow reading column, drawings bleed wider, sticky step index on desktop */
+:root{
+  --paper:#F2F3EF; --panel:#FFFFFF; --ink:#1C2224; --muted:#5B6568; --line:#D6DAD3;
+  --wood:#B07A35; --wood-soft:#EBDDC5; --steel:#45667A; --fabric:#E7D9C2; --fabric-edge:#C7AF8A;
+  --path:#2F7F86; --warn:#B3412A; --warn-soft:#F6E2DC; --ok:#3B7A4B; --ok-soft:#DFEEE2;
+  --display:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#151819; --panel:#1D2123; --ink:#E5E8E3; --muted:#9BA5A7; --line:#2F3538;
+  --wood:#D19C55; --wood-soft:#3A3024; --steel:#86AEC4; --fabric:#3B342A; --fabric-edge:#7A6648;
+  --path:#5CC0C8; --warn:#E5806A; --warn-soft:#3A2420; --ok:#7CC48E; --ok-soft:#1F3326; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#151819; --panel:#1D2123; --ink:#E5E8E3; --muted:#9BA5A7; --line:#2F3538;
+  --wood:#D19C55; --wood-soft:#3A3024; --steel:#86AEC4; --fabric:#3B342A; --fabric-edge:#7A6648;
+  --path:#5CC0C8; --warn:#E5806A; --warn-soft:#3A2420; --ok:#7CC48E; --ok-soft:#1F3326; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.75;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:28px 80px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px}
+@media (max-width:1000px){.wrap{grid-template-columns:minmax(0,1fr);gap:0;padding-inline:16px}.toc{display:none}}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start;font-size:14px}
+.toc b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--muted);margin-bottom:8px}
+.toc a{display:flex;gap:8px;color:var(--ink);text-decoration:none;padding:5px 0;border-bottom:1px solid var(--line)}
+.toc a span{font-family:var(--mono);color:var(--wood);min-width:1.6em}
+.toc a:hover,.toc a:focus-visible{color:var(--wood)}
+main{min-width:0}
+a{color:var(--path)}
+:focus-visible{outline:2px solid var(--path);outline-offset:2px}
+
+header.cover{border-bottom:3px solid var(--ink);padding-bottom:22px;margin-bottom:8px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(32px,5.2vw,52px);line-height:1.15;margin:.2em 0 .3em;text-wrap:balance}
+.lede{max-width:62ch;color:var(--muted);margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:16px;font-size:14px}
+.meta span b{font-family:var(--mono);color:var(--wood);font-weight:600}
+
+section{padding-top:44px}
+h2{font-family:var(--display);font-weight:900;font-size:28px;line-height:1.3;margin:0 0 6px;display:flex;align-items:baseline;gap:12px;text-wrap:balance}
+h2 .no{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--wood);border:1.5px solid var(--wood);border-radius:3px;padding:0 6px;line-height:1.6}
+h3{font-family:var(--display);font-weight:600;font-size:20px;margin:28px 0 6px;text-wrap:balance}
+p{margin:.4em 0 .9em;max-width:68ch}
+.sub{color:var(--muted);margin-top:0}
+.num,td.n{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* summary strip */
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);background:var(--panel);margin-top:22px}
+.strip div{padding:14px 16px;border-right:1px solid var(--line)}
+.strip div:last-child{border-right:0}
+.strip b{display:block;font-family:var(--mono);font-size:26px;font-weight:600;line-height:1.2}
+.strip small{color:var(--muted);font-size:13px}
+@media (max-width:640px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}.strip div:nth-child(2){border-right:0}.strip div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* update notice */
+.notice{border:1.5px solid var(--wood);background:var(--wood-soft);padding:14px 18px;margin:18px 0}
+.notice b{font-family:var(--display)}
+
+/* figures */
+figure{margin:0}
+.fig{background:var(--panel);border:1px solid var(--line);padding:16px;margin:16px 0}
+.fig figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.scroll{overflow-x:auto}
+svg{display:block;max-width:100%;height:auto}
+.iso .stick{stroke:var(--wood);stroke-width:6;stroke-linecap:square}
+.iso .joint,.iso .splice{fill:var(--steel)}
+.iso .fab{fill:var(--fabric);stroke:var(--fabric-edge);stroke-width:1.2;opacity:.92}
+.dimt{font-family:var(--mono);font-size:15px;font-weight:600;fill:var(--muted)}
+.dimt.mid{text-anchor:middle}.dimt.start{text-anchor:start}
+.liftarrow{stroke:var(--path);stroke-width:3}
+.arrowhead{fill:var(--path)}.arrowhead2{fill:var(--path)}
+
+.shapes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.shapes{grid-template-columns:minmax(0,1fr)}}
+.shape{background:var(--panel);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.shape .art{height:250px;display:flex;align-items:center;justify-content:center}
+.shape .art svg{max-height:250px;width:auto}
+.shape h3{margin:4px 0 0;display:flex;justify-content:space-between;align-items:baseline}
+.shape h3 small{font-family:var(--mono);font-size:14px;color:var(--wood)}
+.shape ul{margin:0;padding-left:1.1em;font-size:14px}
+
+/* parts */
+.parts{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin:14px 0}
+.part{background:var(--panel);border:1px solid var(--line);padding:12px;min-width:0}
+.part svg{height:58px;width:100%}
+.part b{display:block;margin-top:6px}
+.part small{color:var(--muted);font-size:13px;line-height:1.5;display:block}
+.pw{stroke:var(--wood);fill:none}.pwf{fill:var(--wood)}.ps{stroke:var(--steel);fill:none}.psf{fill:var(--steel)}.pm{fill:var(--muted);font-family:var(--mono);font-size:13px}.pfab{fill:var(--fabric);stroke:var(--fabric-edge)}
+
+/* tables */
+.tbl{overflow-x:auto;margin:14px 0;border:1px solid var(--line);background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:620px}
+th,td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:700;font-size:13px;color:var(--muted);background:var(--paper)}
+td.n,th.n{text-align:right}
+tr.total td{font-weight:700;border-top:2px solid var(--ink)}
+td .glyph{width:34px;height:34px;vertical-align:middle;margin-right:8px;display:inline-block}
+.g-rail{stroke:var(--wood);stroke-width:5;stroke-linecap:round}.g-post{fill:var(--steel)}
+
+/* steps */
+ol.steps{list-style:none;padding:0;margin:18px 0;counter-reset:s;display:flex;flex-direction:column;gap:0}
+ol.steps>li{counter-increment:s;display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:18px 0;border-top:1px solid var(--line)}
+ol.steps>li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-weight:600;font-size:22px;color:var(--wood);line-height:1.3}
+ol.steps h3{margin:0 0 4px}
+ol.steps ul{margin:.2em 0 .6em;padding-left:1.1em}
+ol.steps li li{margin:.15em 0}
+.key{border-left:4px solid var(--warn);background:var(--warn-soft);padding:12px 16px;margin:10px 0}
+.key b.k{color:var(--warn);font-family:var(--mono);font-size:12px;letter-spacing:.1em;display:block}
+.tip{border-left:4px solid var(--path);padding:6px 14px;margin:10px 0;color:var(--ink);font-size:15px}
+.diagram .beam{fill:var(--wood-soft);stroke:var(--wood);stroke-width:2}
+.diagram .ring{fill:none;stroke:var(--steel);stroke-width:3}
+.diagram .shank{stroke:var(--steel);stroke-width:4}
+.diagram .ban{fill:var(--fabric);stroke:var(--fabric-edge);stroke-width:1.5}
+.diagram .grom{fill:var(--panel);stroke:var(--muted);stroke-width:1.5}
+.diagram .lbl{font-family:var(--body);font-size:14px;fill:var(--ink)}
+.diagram .lbl.m{text-anchor:middle}
+.diagram .small{font-size:12px;fill:var(--muted)}
+.diagram .okc{fill:var(--ok);font-weight:700}.diagram .bad{fill:var(--warn);font-weight:700}
+.diagram .dimline{stroke:var(--warn);stroke-width:1.5}
+.diagram .guide{stroke:var(--muted);stroke-width:1;stroke-dasharray:4 4}
+.diagram .tie{stroke:var(--ink);stroke-width:2;fill:none}
+.diagram .post{fill:var(--wood-soft);stroke:var(--wood);stroke-width:2}
+.diagram .slv{fill:var(--steel)}
+.diagram .ring.thin{stroke-width:2.2}
+.diagram .sleeve{fill:var(--fabric-edge);opacity:.75}
+.diagram .rod{stroke:var(--steel);stroke-width:5;stroke-linecap:round}
+.diagram .notch{fill:var(--panel)}
+.order{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+@media (max-width:700px){.order{grid-template-columns:minmax(0,1fr)}}
+.order div{background:var(--panel);border:1.5px solid var(--ink);padding:12px 14px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 12px;align-items:center}
+.order .ord{grid-row:span 2;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--paper);font-family:var(--mono);font-weight:600;font-size:18px;display:flex;align-items:center;justify-content:center}
+.order b{font-family:var(--display);font-size:18px}
+.order small{color:var(--muted);font-size:13.5px;line-height:1.55}
+.kits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:16px 0}
+@media (max-width:900px){.kits{grid-template-columns:minmax(0,1fr)}}
+.kit-card{background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.kit-card header{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:12px 14px;border-bottom:2px solid var(--ink)}
+.kit-card header b{font-family:var(--display);font-size:18px}
+.kit-card header span{font-size:13px;color:var(--wood);white-space:nowrap}
+.kit-art{background:var(--paper);height:170px;display:flex;align-items:center;justify-content:center;padding:8px}
+.kit-art svg{max-height:154px;width:auto;max-width:100%}
+.plan .klbl{font-family:var(--mono);font-size:19px;font-weight:600;fill:var(--steel);text-anchor:middle}
+table.kit-t{min-width:0;font-size:14px}
+table.kit-t td{padding:6px 12px}
+table.kit-t td:first-child{white-space:nowrap}
+table.kit-t td:last-child{color:var(--muted);font-size:13px}
+table.kit-t tr.wood td{border-top:2px solid var(--line);color:var(--wood)}
+.kit-note{font-size:13px;color:var(--muted);padding:0 14px;margin:8px 0 12px}
+
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:760px){.two{grid-template-columns:minmax(0,1fr)}}
+
+/* plans */
+.plan .floor{fill:var(--panel)}
+.plan .grid{stroke:var(--line);stroke-width:1}
+.plan .grid.g2{stroke-width:2}
+.plan .wall{fill:none;stroke:var(--ink);stroke-width:6}
+.plan .door{stroke:var(--path);stroke-width:12}
+.plan .doort{font-family:var(--body);font-size:18px;fill:var(--path);text-anchor:middle;font-weight:700}
+.plan .walk{fill:none;stroke:var(--path);stroke-width:4;stroke-dasharray:12 9}
+.plan .pfill{fill:var(--fabric)}
+.plan .prail{stroke:var(--wood);stroke-width:7;stroke-linecap:square}
+.plan .pnode{fill:var(--steel)}
+.plan .ptag{fill:var(--ink)}
+.plan .ptagt{fill:var(--paper);font-family:var(--mono);font-size:20px;font-weight:600;text-anchor:middle}
+.plan .pnote{fill:var(--muted);font-family:var(--body);font-size:18px}
+.plan .pnote.end{text-anchor:end}
+.plan .scale{stroke:var(--muted);stroke-width:3}
+.layout{background:var(--panel);border:1px solid var(--line);padding:18px;margin:18px 0;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:820px){.layout{grid-template-columns:minmax(0,1fr)}}
+.layout.wide{grid-template-columns:minmax(0,1fr)}
+.layout.wide ul{columns:2;column-gap:28px}@media (max-width:640px){.layout.wide ul{columns:1}}
+.layout h3{margin-top:0}
+.layout ul{padding-left:1.1em;margin:.3em 0;font-size:15px}
+.fit{font-family:var(--mono);font-size:13px;color:var(--wood);display:block;margin-bottom:4px}
+
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted);margin:10px 0}
+.legend i{display:inline-block;width:18px;height:10px;vertical-align:middle;margin-right:6px}
+.legend .lw{background:var(--wood)}.legend .lf{background:var(--fabric);border:1px solid var(--fabric-edge)}.legend .ln{background:var(--steel);width:10px}.legend .lp{border-top:3px dashed var(--path);height:0}
+.legend .lt{background:var(--ink);border-radius:50%;width:12px;height:12px}
+
+.combos{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:16px 0}
+.combo{background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.combo-art{height:170px;display:flex;align-items:center;justify-content:center;padding:10px;border-bottom:1px solid var(--line);background:var(--paper)}
+.combo-art svg{max-height:150px;width:auto;max-width:100%}
+.combo figcaption{padding:12px 14px;font-size:14px}
+.combo-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+.combo-head b{font-family:var(--display);font-size:17px}
+.combo dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;margin:0}
+.combo dt{color:var(--muted);font-size:13px}
+.combo dd{margin:0}
+.chip{font-size:12px;font-weight:700;padding:1px 8px;border-radius:99px;white-space:nowrap}
+.chip.ok{background:var(--ok-soft);color:var(--ok)}
+.chip.warn{background:var(--warn-soft);color:var(--warn)}
+.chip.idle{background:var(--paper);color:var(--muted);border:1px solid var(--line)}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0}
+.rules div{border-top:3px solid var(--ink);padding-top:8px}
+.rules b{font-family:var(--display)}
+
+.tag{font-size:12px;font-weight:700;color:var(--steel);white-space:nowrap}
+td.sym{font-weight:700;width:24%}
+
+.sync{font-family:var(--mono);font-size:12px;color:var(--path);margin-left:8px}
+.checklist{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:4px 24px}
+.checklist label{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px dashed var(--line);cursor:pointer}
+.checklist input{margin-top:6px;accent-color:var(--wood);width:16px;height:16px;flex:none}
+footer{margin-top:48px;padding-top:16px;border-top:3px solid var(--ink);font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.iso .scr{fill:var(--ink)}
+.plan.num .fabline{stroke:var(--fabric-edge);stroke-width:7;stroke-linecap:round}
+.plan.num .pscr{fill:var(--ink)}
+.plan .badge{fill:var(--path)}
+.plan .badget{fill:var(--panel);font-family:var(--mono);font-size:16px;font-weight:600;text-anchor:middle}
+.plan .front{fill:var(--muted);font-family:var(--body);font-size:13px;text-anchor:middle}
+.kitwrap{display:flex;flex-direction:column;gap:16px;margin:16px 0}
+.kitbox{background:var(--panel);border:1px solid var(--line)}
+.kitbox header{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;padding:12px 16px;border-bottom:2px solid var(--ink)}
+.kitbox header b{font-family:var(--display);font-size:22px}
+.kitbox header span{font-family:var(--mono);font-size:13px;color:var(--wood)}
+.kitvis{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:0;border-bottom:1px solid var(--line)}
+@media (max-width:700px){.kitvis{grid-template-columns:minmax(0,1fr)}}
+.kitiso{background:var(--paper);display:flex;align-items:center;justify-content:center;padding:12px;min-height:220px}
+.kitiso svg{max-height:260px;width:auto;max-width:100%}
+.kitvis img{width:100%;height:100%;max-height:340px;object-fit:cover;display:block}
+.kitbox table{min-width:0}
+.kitbox ul{margin:10px 0 14px;padding-left:2.2em;font-size:14.5px}
+.numgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}
+@media (max-width:700px){.numgrid{grid-template-columns:minmax(0,1fr)}}
+.numcard{background:var(--panel);border:1px solid var(--line);padding:12px 14px}
+.numcard h3{margin:0 0 6px;font-size:18px}
+.numcard svg{max-height:260px;width:100%}
+.numcard p{font-size:14px;color:var(--muted);margin:6px 0 0}
+.parts-t td{vertical-align:middle}
+td.ic{width:118px;padding:6px 8px;text-align:center}
+td.ic svg{width:100px;height:66px;display:block;margin:auto}
+.iccap{display:block;font-size:11px;color:var(--muted);line-height:1.2}
+.icw{fill:var(--wood-soft);stroke:var(--wood);stroke-width:1.5}
+.ics{fill:var(--ink)} .ict{fill:var(--muted)}
+.icm{fill:var(--steel)} .ich{fill:var(--ink)} .ichl{fill:var(--path);stroke:var(--panel);stroke-width:1.5}
+.icb{fill:var(--panel)} .icp{fill:var(--wood)}
+.ict2{font-family:var(--body);font-size:11px;fill:var(--muted)}
+.kitic{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:6px;padding:12px 14px;border-bottom:1px solid var(--line);background:var(--paper)}
+.kic{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--panel);border:1px solid var(--line);padding:6px 4px;min-width:0}
+.kic svg{width:76px;height:50px}
+.kic b{font-size:16px;font-weight:600;line-height:1.2}
+.kic span{font-size:12px;color:var(--muted);line-height:1.3}
+.ictube{fill:var(--fabric);stroke:var(--fabric-edge);stroke-width:1.5}.ictubee{fill:var(--fabric-edge)}
+.must{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0}
+.must div{border:2px solid var(--warn);background:var(--warn-soft);padding:14px 16px}
+.must b{font-family:var(--display);font-size:19px;display:block;margin-bottom:4px}
+.must ul{margin:0;padding-left:1.1em;font-size:14.5px}
+.diagram .mag{fill:var(--steel)}
+.diagram .scrh{fill:var(--ink)}
+.diagram .railx{fill:var(--wood-soft);stroke:var(--wood);stroke-width:2}
+.diagram .cloth{stroke:var(--fabric-edge);stroke-width:4;fill:none}
+.note-list{columns:2;column-gap:28px;padding-left:1.1em}
+@media (max-width:700px){.note-list{columns:1}}
+.note-list li{break-inside:avoid;margin-bottom:8px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrowhead2"/></marker>
+</defs></svg>
+<div class="wrap">
+<nav class="toc" aria-label="目錄">
+  <a class="home" href="../">← 重返1987 學習單</a>
+  <b>CONTENTS</b>
+  <a href="#overview"><span>01</span>分類型構建總覽</a>
+  <a href="#steps"><span>02</span>組裝步驟</a>
+  <a href="#cautions"><span>03</span>注意事項</a>
+  <a href="#banners"><span>04</span>展布順序</a>
+  <a href="#more"><span>05</span>補充注意與排解</a>
+  <a href="#variants"><span>06</span>其他組裝型態</a>
+  <a href="#teardown"><span>07</span>撤場與檢查表</a>
+</nav>
+<main>
+<header class="cover">
+  <div class="eyebrow"><a href="../">重返1987 解嚴檔案行動展</a> · 展架組裝說明書</div>
+  <h1>木框展架組裝說明書</h1>
+  <p class="lede">A 組共 4 袋：日字型、Z字型、口字型 A、口字型 B。木框以鋁合金方管接頭與蝶形螺絲組成，上下框木條鑲有螺絲，展布用磁鐵吸在螺絲頭上。每組 4 張展布，共 16 張。</p>
+  <div class="meta"><span>版本 <b>2026.11.01</b></span><span>立柱 <b>90 cm ×2＋大三通（約 183 cm）</b></span><span>展布 <b>16 張 · 磁鐵 96 顆</b></span></div>
+  <div class="strip" role="list">
+    <div role="listitem"><b>4</b><small>袋（日・Z・口 A・口 B）</small></div>
+    <div role="listitem"><b>16</b><small>張展布，編號 1–16</small></div>
+    <div role="listitem"><b>96</b><small>顆磁鐵（每袋 24）</small></div>
+    <div role="listitem"><b>2–3</b><small>人建議作業人數</small></div>
+  </div>
+</header>
+
+<section id="overview">
+  <h2><span class="no">01</span>分類型構建總覽</h2>
+  <p class="sub">每一袋就是一組展架，袋上的標籤即為清點表。圖中木色為木條、藍色方塊為接頭、立柱中段藍色短條為大三通、黑點為上下框的螺絲（磁吸點），米色面為展布。</p>
+  <h3>零件辨認</h3>
+  <div class="tbl"><table class="parts-t">
+    <thead><tr><th>圖示</th><th>零件</th><th>怎麼認</th><th>用途</th></tr></thead>
+    <tbody><tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ics" cx="16" cy="40" r="3.5"/><circle class="ics" cx="60" cy="40" r="3.5"/><circle class="ics" cx="104" cy="40" r="3.5"/></svg></td><td><b>有螺絲木條</b> 90 cm</td><td>兩端與正中間各有一顆黑色螺絲頭</td><td>上框、下框（橫桿）。螺絲頭是磁鐵吸附點，<strong>朝外</strong></td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ict" cx="14" cy="40" r="1.6"/><circle class="ict" cx="106" cy="40" r="1.6"/></svg></td><td><b>無螺絲木條</b> 90 cm</td><td>表面平滑，只有小孔</td><td>立柱，兩支用大三通接成一根</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icw" x="33" y="32" width="54" height="16" rx="2"/></svg></td><td><b>短木條</b> 45 cm（只有日字型）</td><td>長度只有一半、無螺絲</td><td>日字型兩端與中間的短邊</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icw" x="53" y="0" width="14" height="14"/><rect class="icw" x="53" y="66" width="14" height="14"/><rect class="icm" x="48" y="12" width="24" height="56" rx="2"/><rect class="icm" x="72" y="30" width="16" height="20" rx="2"/><rect class="ich" x="76" y="34" width="8" height="12"/><circle class="icb" cx="60" cy="22" r="3"/><circle class="icb" cx="60" cy="58" r="3"/><text class="ict2" x="92" y="44">側孔</text></svg><small class="iccap">側視</small></td><td><b>大三通</b></td><td>長形，上下兩孔加側邊一孔</td><td>立柱中段對接，側孔不用、朝框內側</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icm" x="34" y="18" width="62" height="20" rx="2"/><rect class="icm" x="34" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="38" y="22" width="12" height="12"/><rect class="ich" x="92" y="22" width="6" height="12"/><rect class="ich" x="38" y="72" width="12" height="6"/><text class="ict2" x="58" y="64">中間孔</text></svg><small class="iccap">俯視・下框</small></td><td><b>立體三通</b>（L 型）</td><td>L 型，兩個橫向孔加中間一個方孔</td><td>所有方框的角；Z字型兩端（空一孔）。<strong>中間方孔接立柱，下框朝上、上框朝下，不會朝左右</strong></td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icm" x="10" y="18" width="100" height="20" rx="2"/><rect class="icm" x="50" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="54" y="22" width="12" height="12"/><rect class="ich" x="8" y="22" width="6" height="12"/><rect class="ich" x="106" y="22" width="6" height="12"/><rect class="ich" x="54" y="72" width="12" height="6"/></svg><small class="iccap">俯視・下框</small></td><td><b>立體四通</b>（只有日字型）</td><td>T 型，橫向貫穿加一橫，中間一個方孔</td><td>日字型長邊中點，中間孔同樣朝上或朝下</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icm" x="10" y="30" width="100" height="20" rx="2"/><rect class="ichl" x="54" y="34" width="12" height="12"/><rect class="ich" x="8" y="34" width="6" height="12"/><rect class="ich" x="106" y="34" width="6" height="12"/></svg><small class="iccap">俯視・下框</small></td><td><b>T三通</b>（只有Z字型）</td><td>一字貫穿，中間一個方孔</td><td>Z字型中間接點，中間孔同樣朝上或朝下</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" role="img" aria-hidden="true"><rect class="icm" x="44" y="52" width="32" height="12" rx="3"/><rect class="icm" x="54" y="28" width="12" height="26"/><circle class="icm" cx="60" cy="24" r="11"/></svg></td><td><b>磁鐵</b></td><td>圓頭強力磁鐵</td><td>把展布壓在螺絲頭上，每張上下各 3 顆</td></tr></tbody>
+  </table></div>
+  <p class="note">圖示中藍色方塊是接立柱的中間孔；深色小方塊是橫桿插入的孔。</p>
+  <p class="note">接頭都用<strong>蝶形螺絲</strong>固定，用手轉緊即可，不需要工具。</p>
+
+  <div class="kitwrap"><article class="kitbox">
+  <header><b>日字型</b><span>×1 袋 · 展布 1–4</span></header>
+  <div class="kitvis"><div class="kitiso"><svg viewBox="-69 -210 274 367" class="iso" role="img" aria-label="RI 立體圖"><polygon class="fab" points="-34.6,-153.0 34.6,-113.0 34.6,63.0 -34.6,23.0"/><polygon class="fab" points="43.3,-108.0 112.6,-68.0 112.6,108.0 43.3,68.0"/><line class="stick" x1="0.0" y1="0.0" x2="0.0" y2="-180.0"/><line class="stick" x1="0.0" y1="0.0" x2="-39.0" y2="22.5"/><line class="stick" x1="0.0" y1="-180.0" x2="-39.0" y2="-157.5"/><line class="stick" x1="0.0" y1="0.0" x2="77.9" y2="45.0"/><line class="stick" x1="0.0" y1="-180.0" x2="77.9" y2="-135.0"/><line class="stick" x1="-39.0" y1="22.5" x2="-39.0" y2="-157.5"/><line class="stick" x1="-39.0" y1="22.5" x2="39.0" y2="67.5"/><line class="stick" x1="-39.0" y1="-157.5" x2="39.0" y2="-112.5"/><line class="stick" x1="77.9" y1="45.0" x2="77.9" y2="-135.0"/><line class="stick" x1="77.9" y1="45.0" x2="39.0" y2="67.5"/><line class="stick" x1="77.9" y1="-135.0" x2="39.0" y2="-112.5"/><line class="stick" x1="77.9" y1="45.0" x2="155.9" y2="90.0"/><line class="stick" x1="77.9" y1="-135.0" x2="155.9" y2="-90.0"/><line class="stick" x1="39.0" y1="67.5" x2="39.0" y2="-112.5"/><line class="stick" x1="39.0" y1="67.5" x2="116.9" y2="112.5"/><line class="stick" x1="39.0" y1="-112.5" x2="116.9" y2="-67.5"/><line class="stick" x1="155.9" y1="90.0" x2="155.9" y2="-90.0"/><line class="stick" x1="155.9" y1="90.0" x2="116.9" y2="112.5"/><line class="stick" x1="155.9" y1="-90.0" x2="116.9" y2="-67.5"/><line class="stick" x1="116.9" y1="112.5" x2="116.9" y2="-67.5"/><circle class="scr" cx="-31.2" cy="-153.0" r="3.2"/><circle class="scr" cx="-31.2" cy="27.0" r="3.2"/><circle class="scr" cx="0.0" cy="-135.0" r="3.2"/><circle class="scr" cx="0.0" cy="45.0" r="3.2"/><circle class="scr" cx="31.2" cy="-117.0" r="3.2"/><circle class="scr" cx="31.2" cy="63.0" r="3.2"/><circle class="scr" cx="46.8" cy="-108.0" r="3.2"/><circle class="scr" cx="46.8" cy="72.0" r="3.2"/><circle class="scr" cx="77.9" cy="-90.0" r="3.2"/><circle class="scr" cx="77.9" cy="90.0" r="3.2"/><circle class="scr" cx="109.1" cy="-72.0" r="3.2"/><circle class="scr" cx="109.1" cy="108.0" r="3.2"/><rect class="joint" x="-6.0" y="-6.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-186.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-99.0" width="9" height="18" rx="1.5"/><rect class="joint" x="71.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="71.9" y="-141.0" width="12" height="12" rx="2"/><rect class="splice" x="73.4" y="-54.0" width="9" height="18" rx="1.5"/><rect class="joint" x="149.9" y="84.0" width="12" height="12" rx="2"/><rect class="joint" x="149.9" y="-96.0" width="12" height="12" rx="2"/><rect class="splice" x="151.4" y="-9.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-45.0" y="16.5" width="12" height="12" rx="2"/><rect class="joint" x="-45.0" y="-163.5" width="12" height="12" rx="2"/><rect class="splice" x="-43.5" y="-76.5" width="9" height="18" rx="1.5"/><rect class="joint" x="33.0" y="61.5" width="12" height="12" rx="2"/><rect class="joint" x="33.0" y="-118.5" width="12" height="12" rx="2"/><rect class="splice" x="34.5" y="-31.5" width="9" height="18" rx="1.5"/><rect class="joint" x="110.9" y="106.5" width="12" height="12" rx="2"/><rect class="joint" x="110.9" y="-73.5" width="12" height="12" rx="2"/><rect class="splice" x="112.4" y="13.5" width="9" height="18" rx="1.5"/><text class="dimt mid" x="0.0" y="71.0">90</text><text class="dimt mid" x="77.9" y="116.0">90</text><text class="dimt mid" x="136.8" y="127.0">45</text><text class="dimt start" x="174.9" y="-1.0">H≈183</text></svg></div><img src="img/ri.jpg" alt="日字型實物：上方無螺絲長木條、左側 45 cm 短木條、下方有螺絲木條與接頭" loading="lazy"></div>
+  <div class="kitic"><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ict" cx="14" cy="40" r="1.6"/><circle class="ict" cx="106" cy="40" r="1.6"/></svg><b class="num">×12</b><span>無螺絲 90 cm</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ics" cx="16" cy="40" r="3.5"/><circle class="ics" cx="60" cy="40" r="3.5"/><circle class="ics" cx="104" cy="40" r="3.5"/></svg><b class="num">×8</b><span>有螺絲 90 cm</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="33" y="32" width="54" height="16" rx="2"/></svg><b class="num">×6</b><span>45 cm</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="34" y="18" width="62" height="20" rx="2"/><rect class="icm" x="34" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="38" y="22" width="12" height="12"/><rect class="ich" x="92" y="22" width="6" height="12"/><rect class="ich" x="38" y="72" width="12" height="6"/></svg><b class="num">×8</b><span>立體三通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="10" y="18" width="100" height="20" rx="2"/><rect class="icm" x="50" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="54" y="22" width="12" height="12"/><rect class="ich" x="8" y="22" width="6" height="12"/><rect class="ich" x="106" y="22" width="6" height="12"/><rect class="ich" x="54" y="72" width="12" height="6"/></svg><b class="num">×4</b><span>立體四通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="53" y="0" width="14" height="14"/><rect class="icw" x="53" y="66" width="14" height="14"/><rect class="icm" x="48" y="12" width="24" height="56" rx="2"/><rect class="icm" x="72" y="30" width="16" height="20" rx="2"/><rect class="ich" x="76" y="34" width="8" height="12"/><circle class="icb" cx="60" cy="22" r="3"/><circle class="icb" cx="60" cy="58" r="3"/></svg><b class="num">×6</b><span>大三通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="44" y="52" width="32" height="12" rx="3"/><rect class="icm" x="54" y="28" width="12" height="26"/><circle class="icm" cx="60" cy="24" r="11"/></svg><b class="num">×24</b><span>磁鐵</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="ictube" x="10" y="26" width="96" height="28" rx="4"/><ellipse class="ictubee" cx="106" cy="40" rx="7" ry="14"/><rect class="icw" x="18" y="30" width="40" height="20" opacity=".0"/></svg><b class="num">×1</b><span>畫筒（1–4）</span></div></div>
+  <table class="kit-t"><thead><tr><th>袋內</th><th class="n">數量</th><th>內容</th></tr></thead><tbody><tr><td>連接件</td><td class="n">18</td><td>大三通 6、立體三通 8、立體四通 4</td></tr><tr><td>木架</td><td class="n">26</td><td>無螺絲 90 cm ×12（立柱 6 根）、有螺絲 90 cm ×8（上下框）、45 cm ×6（短邊與中間隔桿）</td></tr><tr><td>磁鐵</td><td class="n">24</td><td>4 張展布 × 上下各 3 顆</td></tr><tr><td>畫筒</td><td class="n">1</td><td>展布 4 張（編號 1–4）</td></tr></tbody></table>
+  <ul><li>平面 180 × 45，兩格各 90 × 45</li><li>正面 2 張、背面 2 張；兩端 45 cm 不掛布，所以 45 cm 木條沒有螺絲</li><li>長邊中點用立體四通</li></ul>
+</article><article class="kitbox">
+  <header><b>Z字型</b><span>×1 袋 · 展布 5–8</span></header>
+  <div class="kitvis"><div class="kitiso"><svg viewBox="-186 -165 391 334" class="iso" role="img" aria-label="Z 立體圖"><polygon class="fab" points="-151.6,-90.5 -82.3,-130.5 -82.3,45.5 -151.6,85.5"/><polygon class="fab" points="-73.6,-130.5 -4.3,-90.5 -4.3,85.5 -73.6,45.5"/><polygon class="fab" points="4.3,-85.5 73.6,-45.5 73.6,130.5 4.3,90.5"/><polygon class="fab" points="82.3,-45.5 151.6,-85.5 151.6,90.5 82.3,130.5"/><line class="stick" x1="-77.9" y1="45.0" x2="-77.9" y2="-135.0"/><line class="stick" x1="-155.9" y1="90.0" x2="-77.9" y2="45.0"/><line class="stick" x1="-77.9" y1="45.0" x2="0.0" y2="90.0"/><line class="stick" x1="-155.9" y1="-90.0" x2="-77.9" y2="-135.0"/><line class="stick" x1="-77.9" y1="-135.0" x2="0.0" y2="-90.0"/><line class="stick" x1="-155.9" y1="90.0" x2="-155.9" y2="-90.0"/><line class="stick" x1="0.0" y1="90.0" x2="0.0" y2="-90.0"/><line class="stick" x1="155.9" y1="90.0" x2="155.9" y2="-90.0"/><line class="stick" x1="0.0" y1="90.0" x2="77.9" y2="135.0"/><line class="stick" x1="77.9" y1="135.0" x2="155.9" y2="90.0"/><line class="stick" x1="0.0" y1="-90.0" x2="77.9" y2="-45.0"/><line class="stick" x1="77.9" y1="-45.0" x2="155.9" y2="-90.0"/><line class="stick" x1="77.9" y1="135.0" x2="77.9" y2="-45.0"/><circle class="scr" cx="-148.1" cy="-94.5" r="3.2"/><circle class="scr" cx="-148.1" cy="85.5" r="3.2"/><circle class="scr" cx="-116.9" cy="-112.5" r="3.2"/><circle class="scr" cx="-116.9" cy="67.5" r="3.2"/><circle class="scr" cx="-85.7" cy="-130.5" r="3.2"/><circle class="scr" cx="-85.7" cy="49.5" r="3.2"/><circle class="scr" cx="-70.1" cy="-130.5" r="3.2"/><circle class="scr" cx="-70.1" cy="49.5" r="3.2"/><circle class="scr" cx="-39.0" cy="-112.5" r="3.2"/><circle class="scr" cx="-39.0" cy="67.5" r="3.2"/><circle class="scr" cx="-7.8" cy="-94.5" r="3.2"/><circle class="scr" cx="-7.8" cy="85.5" r="3.2"/><circle class="scr" cx="7.8" cy="-85.5" r="3.2"/><circle class="scr" cx="7.8" cy="94.5" r="3.2"/><circle class="scr" cx="39.0" cy="-67.5" r="3.2"/><circle class="scr" cx="39.0" cy="112.5" r="3.2"/><circle class="scr" cx="70.1" cy="-49.5" r="3.2"/><circle class="scr" cx="70.1" cy="130.5" r="3.2"/><circle class="scr" cx="85.7" cy="-49.5" r="3.2"/><circle class="scr" cx="85.7" cy="130.5" r="3.2"/><circle class="scr" cx="116.9" cy="-67.5" r="3.2"/><circle class="scr" cx="116.9" cy="112.5" r="3.2"/><circle class="scr" cx="148.1" cy="-85.5" r="3.2"/><circle class="scr" cx="148.1" cy="94.5" r="3.2"/><rect class="joint" x="-161.9" y="84.0" width="12" height="12" rx="2"/><rect class="joint" x="-161.9" y="-96.0" width="12" height="12" rx="2"/><rect class="splice" x="-160.4" y="-9.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-83.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="-83.9" y="-141.0" width="12" height="12" rx="2"/><rect class="splice" x="-82.4" y="-54.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-6.0" y="84.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-96.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-9.0" width="9" height="18" rx="1.5"/><rect class="joint" x="71.9" y="129.0" width="12" height="12" rx="2"/><rect class="joint" x="71.9" y="-51.0" width="12" height="12" rx="2"/><rect class="splice" x="73.4" y="36.0" width="9" height="18" rx="1.5"/><rect class="joint" x="149.9" y="84.0" width="12" height="12" rx="2"/><rect class="joint" x="149.9" y="-96.0" width="12" height="12" rx="2"/><rect class="splice" x="151.4" y="-9.0" width="9" height="18" rx="1.5"/><text class="dimt mid" x="-116.9" y="93.5">90</text><text class="dimt mid" x="-39.0" y="93.5">90</text><text class="dimt mid" x="39.0" y="138.5">90</text><text class="dimt mid" x="116.9" y="138.5">90</text><text class="dimt start" x="174.9" y="-1.0">H≈183</text></svg></div><img src="img/z.jpg" alt="Z字型實物：上方有螺絲木條、中間無螺絲木條與磁鐵、下方接頭" loading="lazy"></div>
+  <div class="kitic"><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ict" cx="14" cy="40" r="1.6"/><circle class="ict" cx="106" cy="40" r="1.6"/></svg><b class="num">×10</b><span>無螺絲 90 cm</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ics" cx="16" cy="40" r="3.5"/><circle class="ics" cx="60" cy="40" r="3.5"/><circle class="ics" cx="104" cy="40" r="3.5"/></svg><b class="num">×8</b><span>有螺絲 90 cm</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="34" y="18" width="62" height="20" rx="2"/><rect class="icm" x="34" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="38" y="22" width="12" height="12"/><rect class="ich" x="92" y="22" width="6" height="12"/><rect class="ich" x="38" y="72" width="12" height="6"/></svg><b class="num">×8</b><span>立體三通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="10" y="30" width="100" height="20" rx="2"/><rect class="ichl" x="54" y="34" width="12" height="12"/><rect class="ich" x="8" y="34" width="6" height="12"/><rect class="ich" x="106" y="34" width="6" height="12"/></svg><b class="num">×2</b><span>T三通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="53" y="0" width="14" height="14"/><rect class="icw" x="53" y="66" width="14" height="14"/><rect class="icm" x="48" y="12" width="24" height="56" rx="2"/><rect class="icm" x="72" y="30" width="16" height="20" rx="2"/><rect class="ich" x="76" y="34" width="8" height="12"/><circle class="icb" cx="60" cy="22" r="3"/><circle class="icb" cx="60" cy="58" r="3"/></svg><b class="num">×5</b><span>大三通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="44" y="52" width="32" height="12" rx="3"/><rect class="icm" x="54" y="28" width="12" height="26"/><circle class="icm" cx="60" cy="24" r="11"/></svg><b class="num">×24</b><span>磁鐵</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="ictube" x="10" y="26" width="96" height="28" rx="4"/><ellipse class="ictubee" cx="106" cy="40" rx="7" ry="14"/><rect class="icw" x="18" y="30" width="40" height="20" opacity=".0"/></svg><b class="num">×1</b><span>畫筒（5–8）</span></div></div>
+  <table class="kit-t"><thead><tr><th>袋內</th><th class="n">數量</th><th>內容</th></tr></thead><tbody><tr><td>連接件</td><td class="n">15</td><td>立體三通 8（轉角 4＋兩端 4）、大三通 5、T三通 2</td></tr><tr><td>木架</td><td class="n">18</td><td>無螺絲 90 cm ×10（立柱 5 根）、有螺絲 90 cm ×8（上下框）</td></tr><tr><td>磁鐵</td><td class="n">24</td><td>4 張展布 × 上下各 3 顆</td></tr><tr><td>畫筒</td><td class="n">1</td><td>展布 4 張（編號 5–8）</td></tr></tbody></table>
+  <ul><li>中段 90＋90，兩端各轉折 90，方向相反</li><li>沒有封閉框，靠兩端轉折站穩</li><li>兩端的立體三通空一個孔，空孔朝背面</li></ul>
+</article><article class="kitbox">
+  <header><b>口字型</b><span>×2 袋（A、B） · 展布 9–12／13–16</span></header>
+  <div class="kitvis"><div class="kitiso"><svg viewBox="-108 -210 230 334" class="iso" role="img" aria-label="KOU 立體圖"><polygon class="fab" points="73.6,-130.5 4.3,-90.5 4.3,85.5 73.6,45.5"/><polygon class="fab" points="-4.3,-90.5 -73.6,-130.5 -73.6,45.5 -4.3,85.5"/><line class="stick" x1="0.0" y1="0.0" x2="0.0" y2="-180.0"/><line class="stick" x1="0.0" y1="0.0" x2="77.9" y2="45.0"/><line class="stick" x1="-77.9" y1="45.0" x2="0.0" y2="0.0"/><line class="stick" x1="0.0" y1="-180.0" x2="77.9" y2="-135.0"/><line class="stick" x1="-77.9" y1="-135.0" x2="0.0" y2="-180.0"/><line class="stick" x1="77.9" y1="45.0" x2="77.9" y2="-135.0"/><line class="stick" x1="-77.9" y1="45.0" x2="-77.9" y2="-135.0"/><line class="stick" x1="77.9" y1="45.0" x2="0.0" y2="90.0"/><line class="stick" x1="0.0" y1="90.0" x2="-77.9" y2="45.0"/><line class="stick" x1="77.9" y1="-135.0" x2="0.0" y2="-90.0"/><line class="stick" x1="0.0" y1="-90.0" x2="-77.9" y2="-135.0"/><line class="stick" x1="0.0" y1="90.0" x2="0.0" y2="-90.0"/><circle class="scr" cx="70.1" cy="-130.5" r="3.2"/><circle class="scr" cx="70.1" cy="49.5" r="3.2"/><circle class="scr" cx="39.0" cy="-112.5" r="3.2"/><circle class="scr" cx="39.0" cy="67.5" r="3.2"/><circle class="scr" cx="7.8" cy="-94.5" r="3.2"/><circle class="scr" cx="7.8" cy="85.5" r="3.2"/><circle class="scr" cx="-7.8" cy="-94.5" r="3.2"/><circle class="scr" cx="-7.8" cy="85.5" r="3.2"/><circle class="scr" cx="-39.0" cy="-112.5" r="3.2"/><circle class="scr" cx="-39.0" cy="67.5" r="3.2"/><circle class="scr" cx="-70.1" cy="-130.5" r="3.2"/><circle class="scr" cx="-70.1" cy="49.5" r="3.2"/><rect class="joint" x="-6.0" y="-6.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-186.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-99.0" width="9" height="18" rx="1.5"/><rect class="joint" x="71.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="71.9" y="-141.0" width="12" height="12" rx="2"/><rect class="splice" x="73.4" y="-54.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-6.0" y="84.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-96.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-9.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-83.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="-83.9" y="-141.0" width="12" height="12" rx="2"/><rect class="splice" x="-82.4" y="-54.0" width="9" height="18" rx="1.5"/><text class="dimt mid" x="39.0" y="93.5">90</text><text class="dimt mid" x="-39.0" y="93.5">90</text><text class="dimt start" x="91.8" y="-49.0">H≈183</text></svg></div><img src="img/kou.jpg" alt="口字型實物：上方無螺絲木條與接頭、下方有螺絲木條與磁鐵" loading="lazy"></div>
+  <div class="kitic"><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ict" cx="14" cy="40" r="1.6"/><circle class="ict" cx="106" cy="40" r="1.6"/></svg><b class="num">×8</b><span>無螺絲 90 cm</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ics" cx="16" cy="40" r="3.5"/><circle class="ics" cx="60" cy="40" r="3.5"/><circle class="ics" cx="104" cy="40" r="3.5"/></svg><b class="num">×8</b><span>有螺絲 90 cm</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="34" y="18" width="62" height="20" rx="2"/><rect class="icm" x="34" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="38" y="22" width="12" height="12"/><rect class="ich" x="92" y="22" width="6" height="12"/><rect class="ich" x="38" y="72" width="12" height="6"/></svg><b class="num">×8</b><span>立體三通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="53" y="0" width="14" height="14"/><rect class="icw" x="53" y="66" width="14" height="14"/><rect class="icm" x="48" y="12" width="24" height="56" rx="2"/><rect class="icm" x="72" y="30" width="16" height="20" rx="2"/><rect class="ich" x="76" y="34" width="8" height="12"/><circle class="icb" cx="60" cy="22" r="3"/><circle class="icb" cx="60" cy="58" r="3"/></svg><b class="num">×4</b><span>大三通</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="44" y="52" width="32" height="12" rx="3"/><rect class="icm" x="54" y="28" width="12" height="26"/><circle class="icm" cx="60" cy="24" r="11"/></svg><b class="num">×24</b><span>磁鐵</span></div><div class="kic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="ictube" x="10" y="26" width="96" height="28" rx="4"/><ellipse class="ictubee" cx="106" cy="40" rx="7" ry="14"/><rect class="icw" x="18" y="30" width="40" height="20" opacity=".0"/></svg><b class="num">×1</b><span>畫筒（9–12／13–16）</span></div></div>
+  <table class="kit-t"><thead><tr><th>袋內</th><th class="n">數量</th><th>內容</th></tr></thead><tbody><tr><td>連接件</td><td class="n">12</td><td>立體三通 8、大三通 4</td></tr><tr><td>木架</td><td class="n">16</td><td>無螺絲 90 cm ×8（立柱 4 根）、有螺絲 90 cm ×8（上下框）</td></tr><tr><td>磁鐵</td><td class="n">24</td><td>4 張展布 × 上下各 3 顆</td></tr><tr><td>畫筒</td><td class="n">1</td><td>展布 4 張（A：9–12；B：13–16）</td></tr></tbody></table>
+  <ul><li>平面 90 × 90，四面都掛布</li><li>兩袋內容相同，裝袋時不要混用</li><li>兩座擺放時不能重疊或貼合</li></ul>
+</article></div>
+
+  <h3>A 組合計</h3>
+  <div class="tbl"><table class="parts-t"><thead><tr><th>圖示</th><th>項目</th><th class="n">日字型</th><th class="n">Z字型</th><th class="n">口字型 A</th><th class="n">口字型 B</th><th class="n">合計</th></tr></thead><tbody><tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="53" y="0" width="14" height="14"/><rect class="icw" x="53" y="66" width="14" height="14"/><rect class="icm" x="48" y="12" width="24" height="56" rx="2"/><rect class="icm" x="72" y="30" width="16" height="20" rx="2"/><rect class="ich" x="76" y="34" width="8" height="12"/><circle class="icb" cx="60" cy="22" r="3"/><circle class="icb" cx="60" cy="58" r="3"/></svg></td><td>大三通</td><td class="n">6</td><td class="n">5</td><td class="n">4</td><td class="n">4</td><td class="n">19</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="34" y="18" width="62" height="20" rx="2"/><rect class="icm" x="34" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="38" y="22" width="12" height="12"/><rect class="ich" x="92" y="22" width="6" height="12"/><rect class="ich" x="38" y="72" width="12" height="6"/></svg></td><td>立體三通</td><td class="n">8</td><td class="n">8</td><td class="n">8</td><td class="n">8</td><td class="n">32</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="10" y="18" width="100" height="20" rx="2"/><rect class="icm" x="50" y="18" width="20" height="58" rx="2"/><rect class="ichl" x="54" y="22" width="12" height="12"/><rect class="ich" x="8" y="22" width="6" height="12"/><rect class="ich" x="106" y="22" width="6" height="12"/><rect class="ich" x="54" y="72" width="12" height="6"/></svg></td><td>立體四通</td><td class="n">4</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">4</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="10" y="30" width="100" height="20" rx="2"/><rect class="ichl" x="54" y="34" width="12" height="12"/><rect class="ich" x="8" y="34" width="6" height="12"/><rect class="ich" x="106" y="34" width="6" height="12"/></svg></td><td>T三通</td><td class="n">—</td><td class="n">2</td><td class="n">—</td><td class="n">—</td><td class="n">2</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ict" cx="14" cy="40" r="1.6"/><circle class="ict" cx="106" cy="40" r="1.6"/></svg></td><td>無螺絲 90 cm</td><td class="n">12</td><td class="n">10</td><td class="n">8</td><td class="n">8</td><td class="n">38</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="6" y="32" width="108" height="16" rx="2"/><circle class="ics" cx="16" cy="40" r="3.5"/><circle class="ics" cx="60" cy="40" r="3.5"/><circle class="ics" cx="104" cy="40" r="3.5"/></svg></td><td>有螺絲 90 cm</td><td class="n">8</td><td class="n">8</td><td class="n">8</td><td class="n">8</td><td class="n">32</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icw" x="33" y="32" width="54" height="16" rx="2"/></svg></td><td>45 cm</td><td class="n">6</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">6</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="icm" x="44" y="52" width="32" height="12" rx="3"/><rect class="icm" x="54" y="28" width="12" height="26"/><circle class="icm" cx="60" cy="24" r="11"/></svg></td><td>磁鐵</td><td class="n">24</td><td class="n">24</td><td class="n">24</td><td class="n">24</td><td class="n">96</td></tr>
+<tr><td class="ic"><svg viewBox="0 0 120 80" aria-hidden="true"><rect class="ictube" x="10" y="26" width="96" height="28" rx="4"/><ellipse class="ictubee" cx="106" cy="40" rx="7" ry="14"/><rect class="icw" x="18" y="30" width="40" height="20" opacity=".0"/></svg></td><td>展布（畫筒）</td><td class="n">1–4</td><td class="n">5–8</td><td class="n">9–12</td><td class="n">13–16</td><td class="n">16 張</td></tr></tbody></table></div>
+</section>
+
+<section id="steps">
+  <h2><span class="no">02</span>組裝步驟</h2>
+  <p class="sub">三種形狀流程相同：先立柱、再下框、插立柱、上框，鎖緊後才吸展布。</p>
+  <ol class="steps">
+    <li><div><h3>開袋清點</h3><ul>
+      <li>對照袋上標籤點數：連接件、畫筒、木架、磁鐵。數量不對先不要組，找齊再開始。</li>
+      <li>木條分三堆：<strong>有螺絲</strong>（上下框）、<strong>無螺絲長條</strong>（立柱）、<strong>45 cm 短條</strong>（只有日字型）。</li>
+      <li>磁鐵連同小袋放在旁邊，最後才用。</li></ul></div></li>
+    <li><div><h3>組立柱</h3><ul>
+      <li>兩支無螺絲 90 cm 插進大三通上下孔，<strong>兩支都插到底</strong>，接縫密合，蝶形螺絲手鎖緊。</li>
+      <li>數量：日字型 6 根、Z字型 5 根、口字型 4 根。組好平放比對，長度要一樣。</li></ul><div class="fig diagram scroll"><svg viewBox="0 0 620 130" style="min-width:480px">
+  <rect class="post" x="30" y="40" width="262" height="22"/><rect class="post" x="328" y="40" width="262" height="22"/>
+  <rect class="slv" x="260" y="30" width="100" height="42" rx="4"/>
+  <rect x="296" y="72" width="28" height="22" rx="3" class="slv"/><rect x="301" y="76" width="18" height="14" fill="var(--panel)"/>
+  <circle cx="275" cy="51" r="5" fill="var(--panel)"/><circle cx="345" cy="51" r="5" fill="var(--panel)"/>
+  <text class="lbl m" x="150" y="30">無螺絲 90 cm</text><text class="lbl m" x="470" y="30">無螺絲 90 cm</text>
+  <text class="lbl small" x="336" y="90">大三通側孔：不用，朝框內側</text>
+  <line class="guide" x1="30" y1="112" x2="590" y2="112"/>
+  <text class="lbl m" x="310" y="126">立柱總高約 183 cm · 兩支都要插到底、蝶形螺絲鎖緊</text>
+</svg></div></div></li>
+    <li><div><h3>組下框（螺絲面朝外）</h3><ul>
+      <li>用有螺絲 90 cm 木條，<strong>螺絲頭那面朝框外</strong>，接進接頭；蝶形螺絲先半鎖，保留微調空間。</li>
+      <li>L 型接頭（立體三通）的<strong>中間方孔朝上</strong>，立柱才插得進去；立體四通、T三通的立柱孔也一樣朝上。</li>
+      <li><b>口字型</b>：4 支有螺絲木條＋4 個立體三通。</li>
+      <li><b>日字型</b>：長邊 4 支有螺絲木條＋短邊 3 支 45 cm；四個角用立體三通，長邊中點用立體四通。</li>
+      <li><b>Z字型</b>：4 支有螺絲木條；兩個轉角用立體三通，中間用 T三通，兩端用立體三通（空孔朝背面）。螺絲全部朝<strong>同一側</strong>（展示面）。</li></ul></div></li>
+    <li><div><h3>插立柱</h3><ul>
+      <li>立柱插進下框接頭，插到底（約 3 cm 深）。一人扶住，一人插下一根。</li>
+      <li>大三通的側孔朝框內側或背面，正面看不到。</li></ul></div></li>
+    <li><div><h3>組上框並放上</h3><div class="two"><div><ul>
+      <li>上框在地上組好，做法和下框一樣，<strong>螺絲面同樣朝外</strong>，且和下框的螺絲在同一側。</li>
+      <li>上框的 L 型接頭<strong>中間方孔朝下</strong>，對準立柱頂端。</li>
+      <li>2–3 人各持一角，同時抬起、對準所有立柱頂端，一起往下壓。</li>
+      <li>Z字型可分段裝：先裝中間兩支，再裝兩端。</li></ul></div>
+      <figure class="fig" style="margin:0"><div style="max-width:220px;margin:auto"><svg viewBox="-108 -256 216 376" class="iso" role="img" aria-label="KOU 立體圖"><line class="stick" x1="0.0" y1="0.0" x2="0.0" y2="-180.0"/><line class="stick" x1="0.0" y1="0.0" x2="77.9" y2="45.0"/><line class="stick" x1="-77.9" y1="45.0" x2="0.0" y2="0.0"/><line class="stick" x1="0.0" y1="-226.0" x2="77.9" y2="-181.0"/><line class="stick" x1="-77.9" y1="-181.0" x2="0.0" y2="-226.0"/><line class="stick" x1="77.9" y1="45.0" x2="77.9" y2="-135.0"/><line class="stick" x1="-77.9" y1="45.0" x2="-77.9" y2="-135.0"/><line class="stick" x1="77.9" y1="45.0" x2="0.0" y2="90.0"/><line class="stick" x1="0.0" y1="90.0" x2="-77.9" y2="45.0"/><line class="stick" x1="77.9" y1="-181.0" x2="0.0" y2="-136.0"/><line class="stick" x1="0.0" y1="-136.0" x2="-77.9" y2="-181.0"/><line class="stick" x1="0.0" y1="90.0" x2="0.0" y2="-90.0"/><rect class="joint" x="-6.0" y="-6.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-232.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-99.0" width="9" height="18" rx="1.5"/><rect class="joint" x="71.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="71.9" y="-187.0" width="12" height="12" rx="2"/><rect class="splice" x="73.4" y="-54.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-6.0" y="84.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-142.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-9.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-83.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="-83.9" y="-187.0" width="12" height="12" rx="2"/><rect class="splice" x="-82.4" y="-54.0" width="9" height="18" rx="1.5"/><line class="liftarrow" x1="14.0" y1="-236.0" x2="14.0" y2="-192.0" marker-end="url(#arr2)"/><line class="liftarrow" x1="91.9" y1="-191.0" x2="91.9" y2="-147.0" marker-end="url(#arr2)"/><line class="liftarrow" x1="14.0" y1="-146.0" x2="14.0" y2="-102.0" marker-end="url(#arr2)"/><line class="liftarrow" x1="-63.9" y1="-191.0" x2="-63.9" y2="-147.0" marker-end="url(#arr2)"/></svg></div><figcaption>上框整片抬上，四角同時落下。</figcaption></figure></div></div></li>
+    <li><div><h3>校正並鎖緊</h3><ul>
+      <li>量對角線：口字型 90 × 90 為 <span class="num">127.3 cm</span>；日字型整體 180 × 45 為 <span class="num">185.5 cm</span>，單格 90 × 45 為 <span class="num">100.6 cm</span>。</li>
+      <li>Z字型用 3-4-5 法：轉角沿兩邊各量 30、40 cm，兩點距離 50 cm 即為直角。</li>
+      <li>確認後由下往上把所有蝶形螺絲手鎖緊，輕推不晃即可。</li></ul></div></li>
+    <li><div><h3>吸上展布</h3><ul>
+      <li>依第 04 節的編號，從畫筒取出對應展布，正面朝外。</li>
+      <li>上緣先對齊上橫桿的 3 顆螺絲，<strong>先吸中間、再吸兩端</strong>；下緣輕輕往下拉平，同樣由中間往兩端吸。</li>
+      <li>每張展布上下各 3 顆，共 6 顆磁鐵。</li></ul><figure class="fig diagram scroll"><svg viewBox="0 0 600 230" style="min-width:460px">
+  <text class="lbl okc" x="20" y="22">✓ 螺絲面朝外</text>
+  <rect class="railx" x="60" y="50" width="60" height="60"/>
+  <text class="lbl m small" x="90" y="130">上橫桿（側視）</text>
+  <rect class="scrh" x="120" y="72" width="7" height="16" rx="2"/>
+  <path class="cloth" d="M 132 40 L 132 210"/>
+  <rect class="mag" x="136" y="68" width="16" height="24" rx="4"/><rect class="mag" x="152" y="74" width="22" height="12" rx="6"/>
+  <text class="lbl small" x="182" y="70">磁鐵從外側壓住展布</text>
+  <text class="lbl small" x="182" y="90">吸在螺絲頭上</text>
+  <text class="lbl small" x="140" y="200">展布（外側）</text>
+  <text class="lbl bad" x="330" y="22">✕ 螺絲面朝內</text>
+  <rect class="railx" x="400" y="50" width="60" height="60"/>
+  <rect class="scrh" x="393" y="72" width="7" height="16" rx="2"/>
+  <path class="cloth" d="M 466 40 Q 478 120 470 210"/>
+  <rect class="mag" x="472" y="68" width="16" height="24" rx="4"/><rect class="mag" x="488" y="74" width="22" height="12" rx="6"/>
+  <text class="lbl small" x="330" y="150">螺絲在框內側，隔著木頭</text>
+  <text class="lbl small" x="330" y="170">磁鐵吸不到，展布會滑落</text>
+</svg><figcaption>下橫桿同理：螺絲頭一樣朝外，展布下緣用磁鐵壓在螺絲頭上。</figcaption></figure></div></li>
+  </ol>
+</section>
+
+<section id="cautions">
+  <h2><span class="no">03</span>注意事項</h2>
+  <div class="must">
+    <div><b>① 上下磁吸面朝外</b><ul>
+      <li>有螺絲那一面就是磁吸面，上框、下框都要朝外。</li>
+      <li>同一面的上、下螺絲要在同一條垂直線上，展布才不會斜。</li>
+      <li>Z字型沒有內外之分，螺絲一律朝展示的同一側。</li></ul></div>
+    <div><b>② 接頭要確實接合木柱</b><ul>
+      <li>每支木條都要插到接頭底，接縫看不到空隙。</li>
+      <li>蝶形螺絲轉到緊為止，鎖完輕拉木條確認不會鬆脫。</li>
+      <li>立柱的大三通兩端都要確實插好，不然會中段彎折、高度不一。</li></ul></div>
+    <div><b>③ L 型接頭中間孔朝上或朝下</b><ul>
+      <li>所有 L 型接頭（立體三通）的中間方孔都是接立柱用的。</li>
+      <li>下框：中間孔<strong>朝上</strong>；上框：中間孔<strong>朝下</strong>。</li>
+      <li>中間孔朝側面就是裝反了，立柱會插不進去。</li></ul></div>
+  </div>
+</section>
+
+<section id="banners">
+  <h2><span class="no">04</span>展布順序</h2>
+  <p class="sub">規則統一：站在正面，<strong>從左到右，再往右繞到背面</strong>依序編號。藍色圓圈為展布編號，粗米色線為展布位置，黑點為磁吸螺絲。</p>
+  <div class="numgrid">
+    <div class="numcard"><h3>日字型 · 1–4</h3><svg viewBox="-30 -64 240 219" class="plan num" role="img" aria-label="日字型展布編號"><rect class="pfill" x="0" y="0" width="180" height="45"/><line class="fabline" x1="6.0" y1="54.0" x2="84.0" y2="54.0"/><circle class="pscr" cx="9.0" cy="49.0" r="2.6"/><circle class="pscr" cx="45.0" cy="49.0" r="2.6"/><circle class="pscr" cx="81.0" cy="49.0" r="2.6"/><circle class="badge" cx="45.0" cy="79.0" r="15"/><text class="badget" x="45.0" y="85.0">1</text><line class="fabline" x1="96.0" y1="54.0" x2="174.0" y2="54.0"/><circle class="pscr" cx="99.0" cy="49.0" r="2.6"/><circle class="pscr" cx="135.0" cy="49.0" r="2.6"/><circle class="pscr" cx="171.0" cy="49.0" r="2.6"/><circle class="badge" cx="135.0" cy="79.0" r="15"/><text class="badget" x="135.0" y="85.0">2</text><line class="fabline" x1="96.0" y1="-9.0" x2="174.0" y2="-9.0"/><circle class="pscr" cx="99.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="135.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="171.0" cy="-4.0" r="2.6"/><circle class="badge" cx="135.0" cy="-34.0" r="15"/><text class="badget" x="135.0" y="-28.0">3</text><line class="fabline" x1="6.0" y1="-9.0" x2="84.0" y2="-9.0"/><circle class="pscr" cx="9.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="45.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="81.0" cy="-4.0" r="2.6"/><circle class="badge" cx="45.0" cy="-34.0" r="15"/><text class="badget" x="45.0" y="-28.0">4</text><line class="prail" x1="0" y1="0" x2="90" y2="0"/><line class="prail" x1="90" y1="0" x2="180" y2="0"/><line class="prail" x1="0" y1="45" x2="90" y2="45"/><line class="prail" x1="90" y1="45" x2="180" y2="45"/><line class="prail" x1="0" y1="0" x2="0" y2="45"/><line class="prail" x1="90" y1="0" x2="90" y2="45"/><line class="prail" x1="180" y1="0" x2="180" y2="45"/><rect class="pnode" x="-5" y="-5" width="10" height="10"/><rect class="pnode" x="85" y="-5" width="10" height="10"/><rect class="pnode" x="175" y="-5" width="10" height="10"/><rect class="pnode" x="-5" y="40" width="10" height="10"/><rect class="pnode" x="85" y="40" width="10" height="10"/><rect class="pnode" x="175" y="40" width="10" height="10"/><text class="front" x="90" y="125">▲ 正面（參觀者站這側）</text></svg><p>正面左 1、正面右 2；繞到背面後，背面右（從背面看是左）3、背面左 4。</p></div>
+    <div class="numcard"><h3>Z字型 · 5–8</h3><svg viewBox="-30 -30 274 315" class="plan num" role="img" aria-label="Z字型展布編號"><line class="fabline" x1="9.0" y1="174.0" x2="9.0" y2="96.0"/><circle class="pscr" cx="4.0" cy="171.0" r="2.6"/><circle class="pscr" cx="4.0" cy="135.0" r="2.6"/><circle class="pscr" cx="4.0" cy="99.0" r="2.6"/><circle class="badge" cx="34.0" cy="157.5" r="15"/><text class="badget" x="34.0" y="163.5">5</text><line class="fabline" x1="6.0" y1="99.0" x2="84.0" y2="99.0"/><circle class="pscr" cx="9.0" cy="94.0" r="2.6"/><circle class="pscr" cx="45.0" cy="94.0" r="2.6"/><circle class="pscr" cx="81.0" cy="94.0" r="2.6"/><circle class="badge" cx="58.5" cy="124.0" r="15"/><text class="badget" x="58.5" y="130.0">6</text><line class="fabline" x1="96.0" y1="99.0" x2="174.0" y2="99.0"/><circle class="pscr" cx="99.0" cy="94.0" r="2.6"/><circle class="pscr" cx="135.0" cy="94.0" r="2.6"/><circle class="pscr" cx="171.0" cy="94.0" r="2.6"/><circle class="badge" cx="135.0" cy="124.0" r="15"/><text class="badget" x="135.0" y="130.0">7</text><line class="fabline" x1="189.0" y1="84.0" x2="189.0" y2="6.0"/><circle class="pscr" cx="184.0" cy="81.0" r="2.6"/><circle class="pscr" cx="184.0" cy="45.0" r="2.6"/><circle class="pscr" cx="184.0" cy="9.0" r="2.6"/><circle class="badge" cx="214.0" cy="45.0" r="15"/><text class="badget" x="214.0" y="51.0">8</text><line class="prail" x1="0" y1="180" x2="0" y2="90"/><line class="prail" x1="0" y1="90" x2="90" y2="90"/><line class="prail" x1="90" y1="90" x2="180" y2="90"/><line class="prail" x1="180" y1="90" x2="180" y2="0"/><rect class="pnode" x="-5" y="175" width="10" height="10"/><rect class="pnode" x="-5" y="85" width="10" height="10"/><rect class="pnode" x="85" y="85" width="10" height="10"/><rect class="pnode" x="175" y="85" width="10" height="10"/><rect class="pnode" x="175" y="-5" width="10" height="10"/><text class="front" x="107" y="255">▲ 正面（參觀者站這側）</text></svg><p>沿著 Z 從左端走到右端：5、6、7、8，全部在同一側。</p></div>
+    <div class="numcard"><h3>口字型 A · 9–12</h3><svg viewBox="-64 -64 218 264" class="plan num" role="img" aria-label="口字型 A 展布編號"><rect class="pfill" x="0" y="0" width="90" height="90"/><line class="fabline" x1="84.0" y1="99.0" x2="6.0" y2="99.0"/><circle class="pscr" cx="81.0" cy="94.0" r="2.6"/><circle class="pscr" cx="45.0" cy="94.0" r="2.6"/><circle class="pscr" cx="9.0" cy="94.0" r="2.6"/><circle class="badge" cx="45.0" cy="124.0" r="15"/><text class="badget" x="45.0" y="130.0">9</text><line class="fabline" x1="99.0" y1="6.0" x2="99.0" y2="84.0"/><circle class="pscr" cx="94.0" cy="9.0" r="2.6"/><circle class="pscr" cx="94.0" cy="45.0" r="2.6"/><circle class="pscr" cx="94.0" cy="81.0" r="2.6"/><circle class="badge" cx="124.0" cy="45.0" r="15"/><text class="badget" x="124.0" y="51.0">10</text><line class="fabline" x1="6.0" y1="-9.0" x2="84.0" y2="-9.0"/><circle class="pscr" cx="9.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="45.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="81.0" cy="-4.0" r="2.6"/><circle class="badge" cx="45.0" cy="-34.0" r="15"/><text class="badget" x="45.0" y="-28.0">11</text><line class="fabline" x1="-9.0" y1="84.0" x2="-9.0" y2="6.0"/><circle class="pscr" cx="-4.0" cy="81.0" r="2.6"/><circle class="pscr" cx="-4.0" cy="45.0" r="2.6"/><circle class="pscr" cx="-4.0" cy="9.0" r="2.6"/><circle class="badge" cx="-34.0" cy="45.0" r="15"/><text class="badget" x="-34.0" y="51.0">12</text><line class="prail" x1="0" y1="0" x2="90" y2="0"/><line class="prail" x1="90" y1="0" x2="90" y2="90"/><line class="prail" x1="90" y1="90" x2="0" y2="90"/><line class="prail" x1="0" y1="90" x2="0" y2="0"/><rect class="pnode" x="-5" y="-5" width="10" height="10"/><rect class="pnode" x="85" y="-5" width="10" height="10"/><rect class="pnode" x="85" y="85" width="10" height="10"/><rect class="pnode" x="-5" y="85" width="10" height="10"/><text class="front" x="45" y="170">▲ 正面（參觀者站這側）</text></svg><p>正面 9，往右繞：右側 10、背面 11、左側 12。</p></div>
+    <div class="numcard"><h3>口字型 B · 13–16</h3><svg viewBox="-64 -64 218 264" class="plan num" role="img" aria-label="口字型 B 展布編號"><rect class="pfill" x="0" y="0" width="90" height="90"/><line class="fabline" x1="84.0" y1="99.0" x2="6.0" y2="99.0"/><circle class="pscr" cx="81.0" cy="94.0" r="2.6"/><circle class="pscr" cx="45.0" cy="94.0" r="2.6"/><circle class="pscr" cx="9.0" cy="94.0" r="2.6"/><circle class="badge" cx="45.0" cy="124.0" r="15"/><text class="badget" x="45.0" y="130.0">13</text><line class="fabline" x1="99.0" y1="6.0" x2="99.0" y2="84.0"/><circle class="pscr" cx="94.0" cy="9.0" r="2.6"/><circle class="pscr" cx="94.0" cy="45.0" r="2.6"/><circle class="pscr" cx="94.0" cy="81.0" r="2.6"/><circle class="badge" cx="124.0" cy="45.0" r="15"/><text class="badget" x="124.0" y="51.0">14</text><line class="fabline" x1="6.0" y1="-9.0" x2="84.0" y2="-9.0"/><circle class="pscr" cx="9.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="45.0" cy="-4.0" r="2.6"/><circle class="pscr" cx="81.0" cy="-4.0" r="2.6"/><circle class="badge" cx="45.0" cy="-34.0" r="15"/><text class="badget" x="45.0" y="-28.0">15</text><line class="fabline" x1="-9.0" y1="84.0" x2="-9.0" y2="6.0"/><circle class="pscr" cx="-4.0" cy="81.0" r="2.6"/><circle class="pscr" cx="-4.0" cy="45.0" r="2.6"/><circle class="pscr" cx="-4.0" cy="9.0" r="2.6"/><circle class="badge" cx="-34.0" cy="45.0" r="15"/><text class="badget" x="-34.0" y="51.0">16</text><line class="prail" x1="0" y1="0" x2="90" y2="0"/><line class="prail" x1="90" y1="0" x2="90" y2="90"/><line class="prail" x1="90" y1="90" x2="0" y2="90"/><line class="prail" x1="0" y1="90" x2="0" y2="0"/><rect class="pnode" x="-5" y="-5" width="10" height="10"/><rect class="pnode" x="85" y="-5" width="10" height="10"/><rect class="pnode" x="85" y="85" width="10" height="10"/><rect class="pnode" x="-5" y="85" width="10" height="10"/><text class="front" x="45" y="170">▲ 正面（參觀者站這側）</text></svg><p>正面 13，往右繞：右側 14、背面 15、左側 16。</p></div>
+  </div>
+  <div class="tip">建議在每張展布背面角落、以及上框內側各貼一張紙膠帶寫編號，現場對號吸上就不會錯。</div>
+</section>
+
+<section id="more">
+  <h2><span class="no">05</span>補充注意與問題排解</h2>
+  <ul class="note-list">
+    <li><b>強力磁鐵會夾手</b>：兩顆互吸時手指不要放在中間；掉地上容易碎裂。</li>
+    <li><b>磁鐵遠離電子產品</b>：手機、信用卡、筆電、心律調節器都要保持距離。</li>
+    <li><b>小孩與磁鐵</b>：磁鐵掉落要立刻撿回，誤吞非常危險；撤場時每袋點滿 24 顆。</li>
+    <li><b>螺絲頭要平</b>：螺絲鬆動或鎖得太深，磁鐵會吸不牢；用十字起子補鎖到與木面齊平。</li>
+    <li><b>蝶形螺絲手鎖就好</b>：用工具硬鎖會壓傷木頭、螺牙滑掉。</li>
+    <li><b>木條不要混袋</b>：各袋數量剛好，混袋會造成某一組缺料。</li>
+    <li><b>展布捲收不折</b>：放回畫筒時正面朝外捲，避免折痕。</li>
+    <li><b>Z字型較容易被碰倒</b>：放在人少的一側，兩端轉折確實 90°，必要時靠牆。</li>
+    <li><b>立柱約 183 cm</b>：因為大三通中間約 3 cm，和其他 180 cm 展架並排時頂端會差一點。</li>
+    <li><b>冷氣與風</b>：展布只靠 6 點磁吸，出風口正下方或戶外有風時容易掀起。</li>
+  </ul>
+  <div class="tbl"><table>
+    <thead><tr><th>症狀</th><th>可能原因</th><th>處理方式</th></tr></thead>
+    <tbody>
+      <tr><td class="sym">展布吸不住、滑落</td><td>螺絲面朝內；螺絲頭鬆動或凹陷</td><td>把橫桿轉到螺絲朝外；補鎖螺絲到與木面齊平</td></tr>
+      <tr><td class="sym">展布歪斜、斜向皺紋</td><td>上下螺絲不在同一垂直線；上框或下框裝反</td><td>確認上下框有螺絲那面在同一側，必要時把橫桿左右對調</td></tr>
+      <tr><td class="sym">下半部起波浪</td><td>下緣沒拉平就吸</td><td>拿掉下緣磁鐵，輕拉平後由中間往兩端重吸</td></tr>
+      <tr><td class="sym">框架晃動</td><td>蝶形螺絲沒鎖緊；框不成直角</td><td>放鬆接頭、量對角線推正，再由下往上鎖緊</td></tr>
+      <tr><td class="sym">立柱高度不一、中段彎</td><td>木條沒插到大三通底</td><td>拆下重插，兩支都插到底再鎖</td></tr>
+      <tr><td class="sym">立柱插不進上框或下框</td><td>L 型接頭裝反，中間孔朝側面</td><td>轉到中間孔朝上（下框）或朝下（上框）</td></tr>
+      <tr><td class="sym">接頭插不進</td><td>蝶形螺絲沒退開；木條受潮膨脹</td><td>先把螺絲退開；端口用砂紙稍微磨細，不要硬敲</td></tr>
+      <tr><td class="sym">磁鐵不夠</td><td>掉落或混到別袋</td><td>每袋應有 24 顆；先檢查地面與其他袋，臨時可每邊只吸兩端 2 顆</td></tr>
+      <tr><td class="sym">展布編號對不上</td><td>拿錯畫筒</td><td>每個畫筒只裝該組 4 張：日 1–4、Z 5–8、口 9–12／13–16</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="fb" data-sec="05">
+    <div class="fb-head"><h3>遇到問題了嗎？</h3><span class="fb-tag">05 補充注意與排解</span></div>
+    <p class="sub">借用的學校在組裝或使用時有任何問題，請在這裡留言。我們回覆後，問答會公開在下方，聯絡方式不會公開。</p>
+    <div class="qa" data-qa><p class="note">載入已回覆的問答…</p></div>
+    <form class="fbform" novalidate>
+      <div class="fbgrid">
+        <label class="f" for="fb05-school"><span>學校／單位</span><input id="fb05-school" name="school" autocomplete="organization" required></label>
+        <label class="f" for="fb05-name"><span>聯絡人</span><input id="fb05-name" name="name" autocomplete="name"></label>
+        <label class="f" for="fb05-contact"><span>Email 或電話</span><input id="fb05-contact" name="contact" autocomplete="email"></label>
+      </div>
+      <label class="f" for="fb05-q"><span>問題或狀況描述</span><textarea id="fb05-q" name="question" rows="3" required placeholder="例如：口字型 B 的磁鐵吸不住第 14 張展布"></textarea></label>
+      <div class="fbrow"><button type="submit" class="fbbtn">送出問題</button><span class="fbmsg" role="status"></span></div>
+      <ul class="mine" hidden></ul>
+    </form>
+  </div>
+</section>
+
+<section id="variants">
+  <h2><span class="no">06</span>其他組裝型態</h2>
+  <p class="sub">同一批零件可以依空間重組。不論怎麼組，請維持以下原則：</p>
+  <div class="rules">
+    <div><b>參觀順位</b><p>日字型（主視覺與總說）→ Z字型 → 兩座口字型。</p></div>
+    <div><b>口字型不能重疊</b><p>兩座分開擺放，不貼合、不互相遮擋，間距至少 90 cm。</p></div>
+    <div><b>螺絲面跟著轉</b><p>改變形狀後，記得把有螺絲那面轉到參觀者那一側再吸布。</p></div>
+    <div><b>開放型要有轉折</b><p>Z、ㄇ、L 都靠轉折站穩；一字型一定要靠牆或綁在口字型上。</p></div>
+  </div>
+  <div class="combos"><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 260.0 260.0" role="img" aria-label="Z字型（原設計）" class="plan"><line class="prail" x1="0.0" y1="180.0" x2="0.0" y2="90.0"/><line class="prail" x1="0.0" y1="90.0" x2="90.0" y2="90.0"/><line class="prail" x1="90.0" y1="90.0" x2="180.0" y2="90.0"/><line class="prail" x1="180.0" y1="90.0" x2="180.0" y2="0.0"/><rect class="pnode" x="-5.0" y="175.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><rect class="pnode" x="85.0" y="85.0" width="10" height="10"/><rect class="pnode" x="175.0" y="85.0" width="10" height="10"/><rect class="pnode" x="175.0" y="-5.0" width="10" height="10"/><circle class="ptag" cx="90.0" cy="120.0" r="17"/><text class="ptagt" x="90.0" y="127.0">Z</text></svg></div><figcaption><div class="combo-head"><b>Z字型（原設計）</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>Z</dd><dt>佔地</dt><dd class="num">180 × 180 cm</dd><dt>注意</dt><dd>原配件</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 260.0 170.0" role="img" aria-label="ㄇ字型" class="plan"><line class="prail" x1="0.0" y1="90.0" x2="0.0" y2="0.0"/><line class="prail" x1="0.0" y1="0.0" x2="90.0" y2="0.0"/><line class="prail" x1="90.0" y1="0.0" x2="180.0" y2="0.0"/><line class="prail" x1="180.0" y1="0.0" x2="180.0" y2="90.0"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="175.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="175.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="90.0" cy="30.0" r="17"/><text class="ptagt" x="90.0" y="37.0">Z</text></svg></div><figcaption><div class="combo-head"><b>ㄇ字型</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>Z</dd><dt>佔地</dt><dd class="num">180 × 90 cm</dd><dt>注意</dt><dd>原配件；兩端轉折改朝同一側</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 350.0 170.0" role="img" aria-label="L 型長牆" class="plan"><line class="prail" x1="0.0" y1="90.0" x2="0.0" y2="0.0"/><line class="prail" x1="0.0" y1="0.0" x2="90.0" y2="0.0"/><line class="prail" x1="90.0" y1="0.0" x2="180.0" y2="0.0"/><line class="prail" x1="180.0" y1="0.0" x2="270.0" y2="0.0"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="175.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="265.0" y="-5.0" width="10" height="10"/><circle class="ptag" cx="90.0" cy="30.0" r="17"/><text class="ptagt" x="90.0" y="37.0">Z</text></svg></div><figcaption><div class="combo-head"><b>L 型長牆</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>Z</dd><dt>佔地</dt><dd class="num">270 × 90 cm</dd><dt>注意</dt><dd>轉角改直線：立體三通 −2、T三通 ＋2（另需 2 個 T三通或大三通）</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 440.0 80.0" role="img" aria-label="一字型" class="plan"><line class="prail" x1="0.0" y1="0.0" x2="90.0" y2="0.0"/><line class="prail" x1="90.0" y1="0.0" x2="180.0" y2="0.0"/><line class="prail" x1="180.0" y1="0.0" x2="270.0" y2="0.0"/><line class="prail" x1="270.0" y1="0.0" x2="360.0" y2="0.0"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="175.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="265.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="355.0" y="-5.0" width="10" height="10"/><circle class="ptag" cx="180.0" cy="30.0" r="17"/><text class="ptagt" x="180.0" y="37.0">Z</text></svg></div><figcaption><div class="combo-head"><b>一字型</b><span class="chip warn">需固定</span></div><dl><dt>使用</dt><dd>Z</dd><dt>佔地</dt><dd class="num">360 × 0 cm</dd><dt>注意</dt><dd>自己站不穩，兩端要靠牆或綁在口字型上</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 350.0 170.0" role="img" aria-label="雙口分立" class="plan"><rect class="pfill" x="0.0" y="0.0" width="90.0" height="90.0"/><line class="prail" x1="0.0" y1="0.0" x2="90.0" y2="0.0"/><line class="prail" x1="90.0" y1="0.0" x2="90.0" y2="90.0"/><line class="prail" x1="90.0" y1="90.0" x2="0.0" y2="90.0"/><line class="prail" x1="0.0" y1="90.0" x2="0.0" y2="0.0"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="85.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="45.0" cy="45.0" r="17"/><text class="ptagt" x="45.0" y="52.0">口</text><rect class="pfill" x="180.0" y="0.0" width="90.0" height="90.0"/><line class="prail" x1="180.0" y1="0.0" x2="270.0" y2="0.0"/><line class="prail" x1="270.0" y1="0.0" x2="270.0" y2="90.0"/><line class="prail" x1="270.0" y1="90.0" x2="180.0" y2="90.0"/><line class="prail" x1="180.0" y1="90.0" x2="180.0" y2="0.0"/><rect class="pnode" x="175.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="265.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="265.0" y="85.0" width="10" height="10"/><rect class="pnode" x="175.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="225.0" cy="45.0" r="17"/><text class="ptagt" x="225.0" y="52.0">口</text></svg></div><figcaption><div class="combo-head"><b>雙口分立</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>口 ×2</dd><dt>佔地</dt><dd class="num">270 × 90 cm</dd><dt>注意</dt><dd>兩座間距 ≥ 90 cm，不可貼合</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 350.0 350.0" role="img" aria-label="雙口斜對" class="plan"><rect class="pfill" x="0.0" y="0.0" width="90.0" height="90.0"/><line class="prail" x1="0.0" y1="0.0" x2="90.0" y2="0.0"/><line class="prail" x1="90.0" y1="0.0" x2="90.0" y2="90.0"/><line class="prail" x1="90.0" y1="90.0" x2="0.0" y2="90.0"/><line class="prail" x1="0.0" y1="90.0" x2="0.0" y2="0.0"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="85.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="45.0" cy="45.0" r="17"/><text class="ptagt" x="45.0" y="52.0">口</text><rect class="pfill" x="180.0" y="180.0" width="90.0" height="90.0"/><line class="prail" x1="180.0" y1="180.0" x2="270.0" y2="180.0"/><line class="prail" x1="270.0" y1="180.0" x2="270.0" y2="270.0"/><line class="prail" x1="270.0" y1="270.0" x2="180.0" y2="270.0"/><line class="prail" x1="180.0" y1="270.0" x2="180.0" y2="180.0"/><rect class="pnode" x="175.0" y="175.0" width="10" height="10"/><rect class="pnode" x="265.0" y="175.0" width="10" height="10"/><rect class="pnode" x="265.0" y="265.0" width="10" height="10"/><rect class="pnode" x="175.0" y="265.0" width="10" height="10"/><circle class="ptag" cx="225.0" cy="225.0" r="17"/><text class="ptagt" x="225.0" y="232.0">口</text></svg></div><figcaption><div class="combo-head"><b>雙口斜對</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>口 ×2</dd><dt>佔地</dt><dd class="num">270 × 270 cm</dd><dt>注意</dt><dd>斜向錯開，互不遮擋</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 440.0 170.0" role="img" aria-label="牌樓型" class="plan"><rect class="pfill" x="0.0" y="0.0" width="90.0" height="90.0"/><line class="prail" x1="0.0" y1="0.0" x2="90.0" y2="0.0"/><line class="prail" x1="90.0" y1="0.0" x2="90.0" y2="90.0"/><line class="prail" x1="90.0" y1="90.0" x2="0.0" y2="90.0"/><line class="prail" x1="0.0" y1="90.0" x2="0.0" y2="0.0"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="85.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="45.0" cy="45.0" r="17"/><text class="ptagt" x="45.0" y="52.0">口</text><rect class="pfill" x="90.0" y="22.0" width="180.0" height="45.0"/><line class="prail" x1="90.0" y1="22.0" x2="180.0" y2="22.0"/><line class="prail" x1="180.0" y1="22.0" x2="270.0" y2="22.0"/><line class="prail" x1="90.0" y1="67.0" x2="180.0" y2="67.0"/><line class="prail" x1="180.0" y1="67.0" x2="270.0" y2="67.0"/><line class="prail" x1="90.0" y1="22.0" x2="90.0" y2="67.0"/><line class="prail" x1="180.0" y1="22.0" x2="180.0" y2="67.0"/><line class="prail" x1="270.0" y1="22.0" x2="270.0" y2="67.0"/><rect class="pnode" x="85.0" y="17.0" width="10" height="10"/><rect class="pnode" x="175.0" y="17.0" width="10" height="10"/><rect class="pnode" x="265.0" y="17.0" width="10" height="10"/><rect class="pnode" x="85.0" y="62.0" width="10" height="10"/><rect class="pnode" x="175.0" y="62.0" width="10" height="10"/><rect class="pnode" x="265.0" y="62.0" width="10" height="10"/><circle class="ptag" cx="180.0" cy="44.5" r="17"/><text class="ptagt" x="180.0" y="51.5">日</text><rect class="pfill" x="270.0" y="0.0" width="90.0" height="90.0"/><line class="prail" x1="270.0" y1="0.0" x2="360.0" y2="0.0"/><line class="prail" x1="360.0" y1="0.0" x2="360.0" y2="90.0"/><line class="prail" x1="360.0" y1="90.0" x2="270.0" y2="90.0"/><line class="prail" x1="270.0" y1="90.0" x2="270.0" y2="0.0"/><rect class="pnode" x="265.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="355.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="355.0" y="85.0" width="10" height="10"/><rect class="pnode" x="265.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="315.0" cy="45.0" r="17"/><text class="ptagt" x="315.0" y="52.0">口</text></svg></div><figcaption><div class="combo-head"><b>牌樓型</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>日＋口 ×2</dd><dt>佔地</dt><dd class="num">360 × 90 cm</dd><dt>注意</dt><dd>日字型置中當主視覺</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 350.0 260.0" role="img" aria-label="半圍合展間" class="plan"><line class="prail" x1="0.0" y1="90.0" x2="0.0" y2="0.0"/><line class="prail" x1="0.0" y1="0.0" x2="90.0" y2="0.0"/><line class="prail" x1="90.0" y1="0.0" x2="180.0" y2="0.0"/><line class="prail" x1="180.0" y1="0.0" x2="180.0" y2="90.0"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="85.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="175.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="175.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="90.0" cy="30.0" r="17"/><text class="ptagt" x="90.0" y="37.0">Z</text><rect class="pfill" x="90.0" y="135.0" width="180.0" height="45.0"/><line class="prail" x1="90.0" y1="135.0" x2="180.0" y2="135.0"/><line class="prail" x1="180.0" y1="135.0" x2="270.0" y2="135.0"/><line class="prail" x1="90.0" y1="180.0" x2="180.0" y2="180.0"/><line class="prail" x1="180.0" y1="180.0" x2="270.0" y2="180.0"/><line class="prail" x1="90.0" y1="135.0" x2="90.0" y2="180.0"/><line class="prail" x1="180.0" y1="135.0" x2="180.0" y2="180.0"/><line class="prail" x1="270.0" y1="135.0" x2="270.0" y2="180.0"/><rect class="pnode" x="85.0" y="130.0" width="10" height="10"/><rect class="pnode" x="175.0" y="130.0" width="10" height="10"/><rect class="pnode" x="265.0" y="130.0" width="10" height="10"/><rect class="pnode" x="85.0" y="175.0" width="10" height="10"/><rect class="pnode" x="175.0" y="175.0" width="10" height="10"/><rect class="pnode" x="265.0" y="175.0" width="10" height="10"/><circle class="ptag" cx="180.0" cy="157.5" r="17"/><text class="ptagt" x="180.0" y="164.5">日</text></svg></div><figcaption><div class="combo-head"><b>半圍合展間</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>日＋Z</dd><dt>佔地</dt><dd class="num">270 × 180 cm</dd><dt>注意</dt><dd>ㄇ 開口錯開 90 cm 當出入口</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-130.0 -40.0 305.0 260.0" role="img" aria-label="中隔分區" class="plan"><rect class="pfill" x="0.0" y="0.0" width="45.0" height="180.0"/><line class="prail" x1="45.0" y1="0.0" x2="45.0" y2="90.0"/><line class="prail" x1="45.0" y1="90.0" x2="45.0" y2="180.0"/><line class="prail" x1="0.0" y1="0.0" x2="0.0" y2="90.0"/><line class="prail" x1="0.0" y1="90.0" x2="0.0" y2="180.0"/><line class="prail" x1="45.0" y1="0.0" x2="0.0" y2="0.0"/><line class="prail" x1="45.0" y1="90.0" x2="0.0" y2="90.0"/><line class="prail" x1="45.0" y1="180.0" x2="0.0" y2="180.0"/><rect class="pnode" x="40.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="40.0" y="85.0" width="10" height="10"/><rect class="pnode" x="40.0" y="175.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="85.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="175.0" width="10" height="10"/><circle class="ptag" cx="22.5" cy="90.0" r="17"/><text class="ptagt" x="22.5" y="97.0">日</text><rect class="pfill" x="45.0" y="45.0" width="90.0" height="90.0"/><line class="prail" x1="45.0" y1="45.0" x2="135.0" y2="45.0"/><line class="prail" x1="135.0" y1="45.0" x2="135.0" y2="135.0"/><line class="prail" x1="135.0" y1="135.0" x2="45.0" y2="135.0"/><line class="prail" x1="45.0" y1="135.0" x2="45.0" y2="45.0"/><rect class="pnode" x="40.0" y="40.0" width="10" height="10"/><rect class="pnode" x="130.0" y="40.0" width="10" height="10"/><rect class="pnode" x="130.0" y="130.0" width="10" height="10"/><rect class="pnode" x="40.0" y="130.0" width="10" height="10"/><circle class="ptag" cx="90.0" cy="90.0" r="17"/><text class="ptagt" x="90.0" y="97.0">口</text><rect class="pfill" x="-90.0" y="45.0" width="90.0" height="90.0"/><line class="prail" x1="-90.0" y1="45.0" x2="0.0" y2="45.0"/><line class="prail" x1="0.0" y1="45.0" x2="0.0" y2="135.0"/><line class="prail" x1="0.0" y1="135.0" x2="-90.0" y2="135.0"/><line class="prail" x1="-90.0" y1="135.0" x2="-90.0" y2="45.0"/><rect class="pnode" x="-95.0" y="40.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="40.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="130.0" width="10" height="10"/><rect class="pnode" x="-95.0" y="130.0" width="10" height="10"/><circle class="ptag" cx="-45.0" cy="90.0" r="17"/><text class="ptagt" x="-45.0" y="97.0">口</text></svg></div><figcaption><div class="combo-head"><b>中隔分區</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>日＋口 ×2</dd><dt>佔地</dt><dd class="num">225 × 180 cm</dd><dt>注意</dt><dd>日字型直立當隔間</dd></dl></figcaption></figure><figure class="combo"><div class="combo-art"><svg viewBox="-40.0 -40.0 890.0 170.0" role="img" aria-label="全組依序" class="plan"><rect class="pfill" x="0.0" y="22.0" width="180.0" height="45.0"/><line class="prail" x1="0.0" y1="22.0" x2="90.0" y2="22.0"/><line class="prail" x1="90.0" y1="22.0" x2="180.0" y2="22.0"/><line class="prail" x1="0.0" y1="67.0" x2="90.0" y2="67.0"/><line class="prail" x1="90.0" y1="67.0" x2="180.0" y2="67.0"/><line class="prail" x1="0.0" y1="22.0" x2="0.0" y2="67.0"/><line class="prail" x1="90.0" y1="22.0" x2="90.0" y2="67.0"/><line class="prail" x1="180.0" y1="22.0" x2="180.0" y2="67.0"/><rect class="pnode" x="-5.0" y="17.0" width="10" height="10"/><rect class="pnode" x="85.0" y="17.0" width="10" height="10"/><rect class="pnode" x="175.0" y="17.0" width="10" height="10"/><rect class="pnode" x="-5.0" y="62.0" width="10" height="10"/><rect class="pnode" x="85.0" y="62.0" width="10" height="10"/><rect class="pnode" x="175.0" y="62.0" width="10" height="10"/><circle class="ptag" cx="90.0" cy="44.5" r="17"/><text class="ptagt" x="90.0" y="51.5">日</text><line class="prail" x1="270.0" y1="90.0" x2="270.0" y2="0.0"/><line class="prail" x1="270.0" y1="0.0" x2="360.0" y2="0.0"/><line class="prail" x1="360.0" y1="0.0" x2="450.0" y2="0.0"/><line class="prail" x1="450.0" y1="0.0" x2="450.0" y2="90.0"/><rect class="pnode" x="265.0" y="85.0" width="10" height="10"/><rect class="pnode" x="265.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="355.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="445.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="445.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="360.0" cy="30.0" r="17"/><text class="ptagt" x="360.0" y="37.0">Z</text><rect class="pfill" x="540.0" y="0.0" width="90.0" height="90.0"/><line class="prail" x1="540.0" y1="0.0" x2="630.0" y2="0.0"/><line class="prail" x1="630.0" y1="0.0" x2="630.0" y2="90.0"/><line class="prail" x1="630.0" y1="90.0" x2="540.0" y2="90.0"/><line class="prail" x1="540.0" y1="90.0" x2="540.0" y2="0.0"/><rect class="pnode" x="535.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="625.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="625.0" y="85.0" width="10" height="10"/><rect class="pnode" x="535.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="585.0" cy="45.0" r="17"/><text class="ptagt" x="585.0" y="52.0">口</text><rect class="pfill" x="720.0" y="0.0" width="90.0" height="90.0"/><line class="prail" x1="720.0" y1="0.0" x2="810.0" y2="0.0"/><line class="prail" x1="810.0" y1="0.0" x2="810.0" y2="90.0"/><line class="prail" x1="810.0" y1="90.0" x2="720.0" y2="90.0"/><line class="prail" x1="720.0" y1="90.0" x2="720.0" y2="0.0"/><rect class="pnode" x="715.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="805.0" y="-5.0" width="10" height="10"/><rect class="pnode" x="805.0" y="85.0" width="10" height="10"/><rect class="pnode" x="715.0" y="85.0" width="10" height="10"/><circle class="ptag" cx="765.0" cy="45.0" r="17"/><text class="ptagt" x="765.0" y="52.0">口</text></svg></div><figcaption><div class="combo-head"><b>全組依序</b><span class="chip ok">可自立</span></div><dl><dt>使用</dt><dd>全部 4 組</dd><dt>佔地</dt><dd class="num">810 × 90 cm</dd><dt>注意</dt><dd>日 → ㄇ → 口 → 口，間距各 90 cm</dd></dl></figcaption></figure></div>
+
+  <div class="fb" data-sec="06">
+    <div class="fb-head"><h3>遇到問題了嗎？</h3><span class="fb-tag">06 其他組裝型態</span></div>
+    <p class="sub">借用的學校在組裝或使用時有任何問題，請在這裡留言。我們回覆後，問答會公開在下方，聯絡方式不會公開。</p>
+    <div class="qa" data-qa><p class="note">載入已回覆的問答…</p></div>
+    <form class="fbform" novalidate>
+      <div class="fbgrid">
+        <label class="f" for="fb06-school"><span>學校／單位</span><input id="fb06-school" name="school" autocomplete="organization" required></label>
+        <label class="f" for="fb06-name"><span>聯絡人</span><input id="fb06-name" name="name" autocomplete="name"></label>
+        <label class="f" for="fb06-contact"><span>Email 或電話</span><input id="fb06-contact" name="contact" autocomplete="email"></label>
+      </div>
+      <label class="f" for="fb06-q"><span>問題或狀況描述</span><textarea id="fb06-q" name="question" rows="3" required placeholder="例如：口字型 B 的磁鐵吸不住第 14 張展布"></textarea></label>
+      <div class="fbrow"><button type="submit" class="fbbtn">送出問題</button><span class="fbmsg" role="status"></span></div>
+      <ul class="mine" hidden></ul>
+    </form>
+  </div>
+</section>
+
+<section id="teardown">
+  <h2><span class="no">07</span>撤場與檢查表</h2>
+  <h3>撤場順序（與組裝相反）</h3>
+  <ol>
+    <li>取下磁鐵，每張 6 顆，直接收回該組的袋子。</li>
+    <li>展布依編號捲好放回畫筒（日 1–4、Z 5–8、口 9–12／13–16）。</li>
+    <li>多人同時抬下上框 → 拔出立柱 → 拆下框 → 拆開立柱的大三通。</li>
+    <li>依袋上標籤點數後裝袋：連接件、木架、磁鐵 24、畫筒 1。缺件立刻記在標籤上。</li>
+  </ol>
+  <h3>現場檢查表</h3>
+  <p class="sub">勾選只存在這台裝置上，方便現場逐項確認。</p>
+  <ul class="checklist"><li><label for="a1"><input type="checkbox" id="a1">每袋依標籤點清：連接件、木架、磁鐵、畫筒</label></li><li><label for="a2"><input type="checkbox" id="a2">有螺絲木條都用在上下框，螺絲面全部朝外</label></li><li><label for="a3"><input type="checkbox" id="a3">上下框同一面的螺絲在同一條垂直線上</label></li><li><label for="a4"><input type="checkbox" id="a4">立柱兩支都插到大三通底，同組立柱長度一致</label></li><li><label for="a5"><input type="checkbox" id="a5">所有接頭插到底，蝶形螺絲都已手鎖緊</label></li><li><label for="a13"><input type="checkbox" id="a13">L 型接頭中間孔：下框朝上、上框朝下</label></li><li><label for="a6"><input type="checkbox" id="a6">框架對角線相等，輕推不晃</label></li><li><label for="a7"><input type="checkbox" id="a7">大三通側孔、Z字型端點空孔朝內側或背面</label></li><li><label for="a8"><input type="checkbox" id="a8">展布編號正確：日 1–4、Z 5–8、口 9–12、13–16</label></li><li><label for="a9"><input type="checkbox" id="a9">每張展布上下各 3 顆磁鐵吸好，布面平整</label></li><li><label for="a10"><input type="checkbox" id="a10">順位：日字型 → Z字型 → 口字型；兩座口字型不重疊</label></li><li><label for="a11"><input type="checkbox" id="a11">走道 ≥ 120 cm，出口與消防設備淨空</label></li><li><label for="a12"><input type="checkbox" id="a12">撤場時磁鐵每袋 24 顆點清，展布捲回畫筒</label></li></ul>
+  
+  <div class="fb" data-sec="07">
+    <div class="fb-head"><h3>遇到問題了嗎？</h3><span class="fb-tag">07 撤場與檢查表</span></div>
+    <p class="sub">借用的學校在組裝或使用時有任何問題，請在這裡留言。我們回覆後，問答會公開在下方，聯絡方式不會公開。</p>
+    <div class="qa" data-qa><p class="note">載入已回覆的問答…</p></div>
+    <form class="fbform" novalidate>
+      <div class="fbgrid">
+        <label class="f" for="fb07-school"><span>學校／單位</span><input id="fb07-school" name="school" autocomplete="organization" required></label>
+        <label class="f" for="fb07-name"><span>聯絡人</span><input id="fb07-name" name="name" autocomplete="name"></label>
+        <label class="f" for="fb07-contact"><span>Email 或電話</span><input id="fb07-contact" name="contact" autocomplete="email"></label>
+      </div>
+      <label class="f" for="fb07-q"><span>問題或狀況描述</span><textarea id="fb07-q" name="question" rows="3" required placeholder="例如：口字型 B 的磁鐵吸不住第 14 張展布"></textarea></label>
+      <div class="fbrow"><button type="submit" class="fbbtn">送出問題</button><span class="fbmsg" role="status"></span></div>
+      <ul class="mine" hidden></ul>
+    </form>
+  </div>
+  <footer>本說明依 A 組實物照片、袋上清點標籤、手繪尺寸圖與現場注意事項整理（2026-11-01）。展布編號方向為建議規則，若展布另有指定順序，以展布上的標示為準。</footer>
+</section>
+</main>
+</div>
+<script>
+(function(){
+  "use strict";
+  // ---- 回饋設定：建立 Google 表單與「公開問答」試算表後填入 ----
+  var CFG = {
+    formAction: "",   // 例：https://docs.google.com/forms/d/e/XXXX/formResponse
+    entries: { section: "", school: "", name: "", contact: "", question: "" },  // 例：entry.123456789
+    qaCsv: ""         // 「公開問答」工作表「發布到網路」的 CSV 連結
+  };
+
+  function $(s, r){ return (r || document).querySelector(s); }
+  function $$(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function esc(t){ return String(t == null ? "" : t).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+  function load(k, d){ try { var v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }
+  function store(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+  function parseCSV(text){
+    var rows = [], row = [], cell = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) {
+        if (c === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; }
+        else cell += c;
+      } else if (c === '"') q = true;
+      else if (c === ",") { row.push(cell); cell = ""; }
+      else if (c === "\n" || c === "\r") {
+        if (c === "\r" && text[i + 1] === "\n") i++;
+        row.push(cell); rows.push(row); row = []; cell = "";
+      } else cell += c;
+    }
+    if (cell !== "" || row.length) { row.push(cell); rows.push(row); }
+    return rows;
+  }
+
+  var blocks = $$(".fb");
+
+  // ---- 已回覆的問答 ----
+  function renderQA(rows){
+    blocks.forEach(function(b){
+      var code = b.getAttribute("data-sec"), box = $("[data-qa]", b);
+      var list = rows.filter(function(r){ return String(r[0] || "").trim().indexOf(code) === 0 && String(r[1] || "").trim() && String(r[2] || "").trim(); });
+      if (!list.length) { box.innerHTML = '<p class="note">這一節目前還沒有公開的問答。</p>'; return; }
+      box.innerHTML = list.map(function(r){
+        return '<details class="qa-item"><summary>' + esc(r[1]) + '</summary><div class="ans">' + esc(r[2]).replace(/\n/g, "<br>") + '</div></details>';
+      }).join("");
+    });
+  }
+  if (CFG.qaCsv) {
+    fetch(CFG.qaCsv, {cache: "no-store"})
+      .then(function(r){ if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function(t){ var rows = parseCSV(t); rows.shift(); renderQA(rows); })
+      .catch(function(){ blocks.forEach(function(b){ $("[data-qa]", b).innerHTML = '<p class="note">問答暫時載入不了，請稍後重新整理頁面。</p>'; }); });
+  } else renderQA([]);
+
+  // ---- 提問表單 ----
+  var ready = !!(CFG.formAction && CFG.entries.question);
+  var who = load("manual-fb-who", {});
+  blocks.forEach(function(b){
+    var form = $("form", b), msg = $(".fbmsg", b), btn = $(".fbbtn", b), mine = $(".mine", b);
+    var code = b.getAttribute("data-sec"), label = $(".fb-tag", b).textContent, key = "manual-fb-" + code;
+    ["school", "name", "contact"].forEach(function(f){ if (who[f]) form[f].value = who[f]; });
+    function showMine(){
+      var arr = load(key, []);
+      if (!arr.length) { mine.hidden = true; return; }
+      mine.hidden = false;
+      mine.innerHTML = '<li class="mine-h">你從這台裝置送出的問題</li>' + arr.map(function(x){ return '<li>' + esc(x.q) + '<small>' + esc(x.t) + '</small></li>'; }).join("");
+    }
+    showMine();
+    if (!ready) { btn.disabled = true; msg.textContent = "提問功能即將開放。"; return; }
+    form.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var school = form.school.value.trim(), q = form.question.value.trim();
+      if (!school) { msg.textContent = "請填寫學校或單位。"; form.school.focus(); return; }
+      if (!q) { msg.textContent = "請寫下你的問題。"; form.question.focus(); return; }
+      var body = new URLSearchParams();
+      body.append(CFG.entries.section, label);
+      body.append(CFG.entries.school, school);
+      if (CFG.entries.name) body.append(CFG.entries.name, form.name.value.trim());
+      if (CFG.entries.contact) body.append(CFG.entries.contact, form.contact.value.trim());
+      body.append(CFG.entries.question, q);
+      btn.disabled = true; msg.textContent = "送出中…";
+      fetch(CFG.formAction, {method: "POST", mode: "no-cors", body: body})
+        .then(function(){
+          msg.textContent = "已送出，謝謝！我們回覆後會公開在這一節的問答裡。";
+          who = {school: school, name: form.name.value.trim(), contact: form.contact.value.trim()}; store("manual-fb-who", who);
+          var arr = load(key, []); arr.unshift({q: q, t: new Date().toLocaleString("zh-TW")}); store(key, arr.slice(0, 10));
+          form.question.value = ""; showMine();
+        })
+        .catch(function(){ msg.textContent = "送出失敗，請確認網路連線後再試一次。"; })
+        .then(function(){ btn.disabled = false; });
+    });
+  });
+
+  // ---- 現場檢查表（只存在這台裝置） ----
+  var saved = load("manual-checklist", {});
+  $$(".checklist input").forEach(function(b){
+    if (saved[b.id]) b.checked = true;
+    b.addEventListener("change", function(){ saved[b.id] = b.checked; store("manual-checklist", saved); });
+  });
+})();
+
+</script>
+</body>
+</html>
