@@ -283,6 +283,26 @@ td.ic svg{width:100px;height:66px;display:block;margin:auto}
 .kic b{font-size:16px;font-weight:600;line-height:1.2}
 .kic span{font-size:12px;color:var(--muted);line-height:1.3}
 .ictube{fill:var(--fabric);stroke:var(--fabric-edge);stroke-width:1.5}.ictubee{fill:var(--fabric-edge)}
+.vrow{margin:16px 0 4px;display:flex}
+.vbtn{display:inline-flex;align-items:center;gap:10px;padding:9px 18px 9px 10px;border-radius:999px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:700;font-size:15px}
+.vbtn:hover{opacity:.88}
+.vbtn .vplay{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--wood);color:var(--panel);font-size:13px;padding-left:2px}
+.vbtn small{font-weight:500;font-size:12px;margin-left:8px;opacity:.8}
+.vbtn.off{background:var(--line);color:var(--muted);cursor:default}
+.vbtn.off .vplay{background:var(--muted)}
+.sthead{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.stepic{width:58px;height:58px;flex:none;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:5px}
+.icl{stroke:var(--ink);stroke-width:2;fill:none}
+.icd{stroke:var(--path);stroke-width:2;stroke-dasharray:4 3;fill:none}
+.icframe{fill:none;stroke:var(--wood);stroke-width:7}
+.icpaper{fill:var(--panel);stroke:var(--muted);stroke-width:1.5}
+.icok{stroke:var(--ok);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.icarr{stroke:var(--path);stroke-width:2.5}
+.iceq{font-family:var(--mono);font-size:16px;font-weight:600;fill:var(--path);text-anchor:middle}
+.tocv{margin-top:16px}
+.tocv .vbtn{font-size:13px;padding:6px 12px 6px 6px;gap:8px}
+.tocv .vbtn .vplay{width:24px;height:24px;font-size:11px}
+.tocv .vbtn small{display:block;margin-left:0}
 .must{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0}
 .must div{border:2px solid var(--warn);background:var(--warn-soft);padding:14px 16px}
 .must b{font-family:var(--display);font-size:19px;display:block;margin-bottom:4px}
@@ -311,6 +331,7 @@ td.ic svg{width:100px;height:66px;display:block;margin:auto}
   <a href="#more"><span>05</span>補充注意與排解</a>
   <a href="#variants"><span>06</span>其他組裝型態</a>
   <a href="#teardown"><span>07</span>撤場與檢查表</a>
+  <div class="tocv"><span class="vbtn off" aria-disabled="true"><span class="vplay" aria-hidden="true">▶</span><span>組裝影片<small>即將上線</small></span></span></div>
 </nav>
 <main>
 <header class="cover">
@@ -324,6 +345,7 @@ td.ic svg{width:100px;height:66px;display:block;margin:auto}
     <div role="listitem"><b>96</b><small>顆磁鐵（每袋 24）</small></div>
     <div role="listitem"><b>2–3</b><small>人建議作業人數</small></div>
   </div>
+  <div class="vrow"><span class="vbtn off" aria-disabled="true"><span class="vplay" aria-hidden="true">▶</span><span>組裝影片<small>即將上線</small></span></span></div>
 </header>
 
 <section id="overview">
@@ -379,12 +401,13 @@ td.ic svg{width:100px;height:66px;display:block;margin:auto}
 <section id="steps">
   <h2><span class="no">02</span>組裝步驟</h2>
   <p class="sub">三種形狀流程相同：先立柱、再下框、插立柱、上框，鎖緊後才吸展布。</p>
+  <div class="vrow"><span class="vbtn off" aria-disabled="true"><span class="vplay" aria-hidden="true">▶</span><span>組裝影片<small>即將上線</small></span></span></div>
   <ol class="steps">
-    <li><div><h3>開袋清點</h3><ul>
+    <li><div><div class="sthead"><svg class="stepic" viewBox="0 0 80 80" aria-hidden="true"><rect class="ictube" x="6" y="30" width="44" height="40" rx="7"/><path class="icl" d="M18 30 v-7 a10 10 0 0 1 20 0 v7"/><line class="icl" x1="28" y1="34" x2="28" y2="66" stroke-dasharray="3 3"/><rect class="icpaper" x="44" y="10" width="30" height="40" rx="3"/><path class="icok" d="M49 20 l3 3 l5 -6"/><line class="icl" x1="60" y1="20" x2="70" y2="20"/><path class="icok" d="M49 30 l3 3 l5 -6"/><line class="icl" x1="60" y1="30" x2="70" y2="30"/><path class="icok" d="M49 40 l3 3 l5 -6"/><line class="icl" x1="60" y1="40" x2="70" y2="40"/></svg><h3>開袋清點</h3></div><ul>
       <li>對照袋上標籤點數：連接件、畫筒、木架、磁鐵。數量不對先不要組，找齊再開始。</li>
       <li>木條分三堆：<strong>有螺絲</strong>（上下框）、<strong>無螺絲長條</strong>（立柱）、<strong>45 cm 短條</strong>（只有日字型）。</li>
       <li>磁鐵連同小袋放在旁邊，最後才用。</li></ul></div></li>
-    <li><div><h3>組立柱</h3><ul>
+    <li><div><div class="sthead"><svg class="stepic" viewBox="0 0 80 80" aria-hidden="true"><rect class="icw" x="34" y="3" width="12" height="29"/><rect class="icw" x="34" y="48" width="12" height="29"/><rect class="icm" x="29" y="26" width="22" height="28" rx="3"/><rect class="icm" x="51" y="33" width="11" height="14" rx="2"/><circle class="icb" cx="40" cy="33" r="2.5"/><circle class="icb" cx="40" cy="47" r="2.5"/></svg><h3>組立柱</h3></div><ul>
       <li>兩支無螺絲 90 cm 插進大三通上下孔，<strong>兩支都插到底</strong>，接縫密合，蝶形螺絲手鎖緊。</li>
       <li>數量：日字型 6 根、Z字型 5 根、口字型 4 根。組好平放比對，長度要一樣。</li></ul><div class="fig diagram scroll"><svg viewBox="0 0 620 130" style="min-width:480px">
   <rect class="post" x="30" y="40" width="262" height="22"/><rect class="post" x="328" y="40" width="262" height="22"/>
@@ -396,26 +419,26 @@ td.ic svg{width:100px;height:66px;display:block;margin:auto}
   <line class="guide" x1="30" y1="112" x2="590" y2="112"/>
   <text class="lbl m" x="310" y="126">立柱總高約 183 cm · 兩支都要插到底、蝶形螺絲鎖緊</text>
 </svg></div></div></li>
-    <li><div><h3>組下框（螺絲面朝外）</h3><ul>
+    <li><div><div class="sthead"><svg class="stepic" viewBox="0 0 80 80" aria-hidden="true"><rect class="icw" x="16" y="12" width="48" height="8"/><rect class="icw" x="16" y="60" width="48" height="8"/><rect class="icw" x="12" y="16" width="8" height="48"/><rect class="icw" x="60" y="16" width="8" height="48"/><rect class="icm" x="8" y="8" width="16" height="16" rx="2"/><rect class="icm" x="56" y="8" width="16" height="16" rx="2"/><rect class="icm" x="8" y="56" width="16" height="16" rx="2"/><rect class="icm" x="56" y="56" width="16" height="16" rx="2"/><rect class="ichl" x="12" y="12" width="8" height="8"/><rect class="ichl" x="60" y="12" width="8" height="8"/><rect class="ichl" x="12" y="60" width="8" height="8"/><rect class="ichl" x="60" y="60" width="8" height="8"/><circle class="ics" cx="32" cy="9" r="2.2"/><circle class="ics" cx="40" cy="9" r="2.2"/><circle class="ics" cx="48" cy="9" r="2.2"/><circle class="ics" cx="32" cy="71" r="2.2"/><circle class="ics" cx="40" cy="71" r="2.2"/><circle class="ics" cx="48" cy="71" r="2.2"/><circle class="ics" cx="9" cy="32" r="2.2"/><circle class="ics" cx="9" cy="40" r="2.2"/><circle class="ics" cx="9" cy="48" r="2.2"/><circle class="ics" cx="71" cy="32" r="2.2"/><circle class="ics" cx="71" cy="40" r="2.2"/><circle class="ics" cx="71" cy="48" r="2.2"/></svg><h3>組下框（螺絲面朝外）</h3></div><ul>
       <li>用有螺絲 90 cm 木條，<strong>螺絲頭那面朝框外</strong>，接進接頭；蝶形螺絲先半鎖，保留微調空間。</li>
       <li>L 型接頭（立體三通）的<strong>中間方孔朝上</strong>，立柱才插得進去；立體四通、T三通的立柱孔也一樣朝上。</li>
       <li><b>口字型</b>：4 支有螺絲木條＋4 個立體三通。</li>
       <li><b>日字型</b>：長邊 4 支有螺絲木條＋短邊 3 支 45 cm；四個角用立體三通，長邊中點用立體四通。</li>
       <li><b>Z字型</b>：4 支有螺絲木條；兩個轉角用立體三通，中間用 T三通，兩端用立體三通（空孔朝背面）。螺絲全部朝<strong>同一側</strong>（展示面）。</li></ul></div></li>
-    <li><div><h3>插立柱</h3><ul>
+    <li><div><div class="sthead"><svg class="stepic" viewBox="0 0 80 80" aria-hidden="true"><rect class="icw" x="12" y="62" width="56" height="8"/><rect class="icm" x="6" y="58" width="16" height="16" rx="2"/><rect class="icm" x="58" y="58" width="16" height="16" rx="2"/><rect class="ichl" x="10" y="58" width="8" height="5"/><rect class="ichl" x="62" y="58" width="8" height="5"/><rect class="icw" x="10" y="6" width="8" height="38"/><rect class="icw" x="62" y="6" width="8" height="38"/><line class="icarr" x1="36" y1="14" x2="36" y2="46" marker-end="url(#arr2)"/><line class="icarr" x1="46" y1="14" x2="46" y2="46" marker-end="url(#arr2)"/></svg><h3>插立柱</h3></div><ul>
       <li>立柱插進下框接頭，插到底（約 3 cm 深）。一人扶住，一人插下一根。</li>
       <li>大三通的側孔朝框內側或背面，正面看不到。</li></ul></div></li>
-    <li><div><h3>組上框並放上</h3><div class="two"><div><ul>
+    <li><div><div class="sthead"><svg class="stepic" viewBox="0 0 80 80" aria-hidden="true"><rect class="icw" x="12" y="8" width="56" height="8"/><rect class="icm" x="6" y="4" width="16" height="16" rx="2"/><rect class="icm" x="58" y="4" width="16" height="16" rx="2"/><rect class="ichl" x="10" y="15" width="8" height="5"/><rect class="ichl" x="62" y="15" width="8" height="5"/><rect class="icw" x="10" y="40" width="8" height="36"/><rect class="icw" x="62" y="40" width="8" height="36"/><line class="icarr" x1="14" y1="24" x2="14" y2="36" marker-end="url(#arr2)"/><line class="icarr" x1="66" y1="24" x2="66" y2="36" marker-end="url(#arr2)"/><line class="icarr" x1="40" y1="24" x2="40" y2="44" marker-end="url(#arr2)"/></svg><h3>組上框並放上</h3></div><div class="two"><div><ul>
       <li>上框在地上組好，做法和下框一樣，<strong>螺絲面同樣朝外</strong>，且和下框的螺絲在同一側。</li>
       <li>上框的 L 型接頭<strong>中間方孔朝下</strong>，對準立柱頂端。</li>
       <li>2–3 人各持一角，同時抬起、對準所有立柱頂端，一起往下壓。</li>
       <li>Z字型可分段裝：先裝中間兩支，再裝兩端。</li></ul></div>
       <figure class="fig" style="margin:0"><div style="max-width:220px;margin:auto"><svg viewBox="-108 -256 216 376" class="iso" role="img" aria-label="KOU 立體圖"><line class="stick" x1="0.0" y1="0.0" x2="0.0" y2="-180.0"/><line class="stick" x1="0.0" y1="0.0" x2="77.9" y2="45.0"/><line class="stick" x1="-77.9" y1="45.0" x2="0.0" y2="0.0"/><line class="stick" x1="0.0" y1="-226.0" x2="77.9" y2="-181.0"/><line class="stick" x1="-77.9" y1="-181.0" x2="0.0" y2="-226.0"/><line class="stick" x1="77.9" y1="45.0" x2="77.9" y2="-135.0"/><line class="stick" x1="-77.9" y1="45.0" x2="-77.9" y2="-135.0"/><line class="stick" x1="77.9" y1="45.0" x2="0.0" y2="90.0"/><line class="stick" x1="0.0" y1="90.0" x2="-77.9" y2="45.0"/><line class="stick" x1="77.9" y1="-181.0" x2="0.0" y2="-136.0"/><line class="stick" x1="0.0" y1="-136.0" x2="-77.9" y2="-181.0"/><line class="stick" x1="0.0" y1="90.0" x2="0.0" y2="-90.0"/><rect class="joint" x="-6.0" y="-6.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-232.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-99.0" width="9" height="18" rx="1.5"/><rect class="joint" x="71.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="71.9" y="-187.0" width="12" height="12" rx="2"/><rect class="splice" x="73.4" y="-54.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-6.0" y="84.0" width="12" height="12" rx="2"/><rect class="joint" x="-6.0" y="-142.0" width="12" height="12" rx="2"/><rect class="splice" x="-4.5" y="-9.0" width="9" height="18" rx="1.5"/><rect class="joint" x="-83.9" y="39.0" width="12" height="12" rx="2"/><rect class="joint" x="-83.9" y="-187.0" width="12" height="12" rx="2"/><rect class="splice" x="-82.4" y="-54.0" width="9" height="18" rx="1.5"/><line class="liftarrow" x1="14.0" y1="-236.0" x2="14.0" y2="-192.0" marker-end="url(#arr2)"/><line class="liftarrow" x1="91.9" y1="-191.0" x2="91.9" y2="-147.0" marker-end="url(#arr2)"/><line class="liftarrow" x1="14.0" y1="-146.0" x2="14.0" y2="-102.0" marker-end="url(#arr2)"/><line class="liftarrow" x1="-63.9" y1="-191.0" x2="-63.9" y2="-147.0" marker-end="url(#arr2)"/></svg></div><figcaption>上框整片抬上，四角同時落下。</figcaption></figure></div></div></li>
-    <li><div><h3>校正並鎖緊</h3><ul>
+    <li><div><div class="sthead"><svg class="stepic" viewBox="0 0 80 80" aria-hidden="true"><rect class="icframe" x="12" y="12" width="56" height="56"/><line class="icd" x1="14" y1="14" x2="66" y2="66"/><line class="icd" x1="66" y1="14" x2="14" y2="66"/><rect class="icm" x="8" y="8" width="10" height="10" rx="2"/><rect class="icm" x="62" y="8" width="10" height="10" rx="2"/><rect class="icm" x="8" y="62" width="10" height="10" rx="2"/><rect class="icm" x="62" y="62" width="10" height="10" rx="2"/><rect class="icpaper" x="29" y="31" width="22" height="18" rx="3"/><text class="iceq" x="40" y="45">=</text></svg><h3>校正並鎖緊</h3></div><ul>
       <li>量對角線：口字型 90 × 90 為 <span class="num">127.3 cm</span>；日字型整體 180 × 45 為 <span class="num">185.5 cm</span>，單格 90 × 45 為 <span class="num">100.6 cm</span>。</li>
       <li>Z字型用 3-4-5 法：轉角沿兩邊各量 30、40 cm，兩點距離 50 cm 即為直角。</li>
       <li>確認後由下往上把所有蝶形螺絲手鎖緊，輕推不晃即可。</li></ul></div></li>
-    <li><div><h3>吸上展布</h3><ul>
+    <li><div><div class="sthead"><svg class="stepic" viewBox="0 0 80 80" aria-hidden="true"><rect class="icw" x="8" y="6" width="8" height="70"/><rect class="icw" x="64" y="6" width="8" height="70"/><rect class="icw" x="8" y="8" width="64" height="8"/><rect class="icw" x="8" y="64" width="64" height="8"/><rect class="ictube" x="18" y="14" width="44" height="52"/><circle class="icm" cx="24" cy="12" r="4.5"/><circle class="icm" cx="24" cy="68" r="4.5"/><circle class="icm" cx="40" cy="12" r="4.5"/><circle class="icm" cx="40" cy="68" r="4.5"/><circle class="icm" cx="56" cy="12" r="4.5"/><circle class="icm" cx="56" cy="68" r="4.5"/></svg><h3>吸上展布</h3></div><ul>
       <li>依第 04 節的編號，從畫筒取出對應展布，正面朝外。</li>
       <li>上緣先對齊上橫桿的 3 顆螺絲，<strong>先吸中間、再吸兩端</strong>；下緣輕輕往下拉平，同樣由中間往兩端吸。</li>
       <li>每張展布上下各 3 顆，共 6 顆磁鐵。</li></ul><figure class="fig diagram scroll"><svg viewBox="0 0 600 230" style="min-width:460px">
