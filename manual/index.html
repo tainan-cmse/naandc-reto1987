@@ -375,6 +375,8 @@ td.ic .phic{width:100px;height:66px;margin:auto}
 .kitpanel h4 small{font-weight:400;font-size:13px;color:var(--muted)}
 .kn{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:14px}
 .kitpanel .kitic{border:1px solid var(--line)}
+#d-teardown li.must{background:var(--warn-soft);border-left:4px solid var(--warn);padding:6px 10px;margin-bottom:6px}
+#d-teardown li.must b{color:var(--warn)}
 .qsteps{list-style:none;padding:0;margin:0;counter-reset:q;display:flex;flex-direction:column}
 .qsteps li{counter-increment:q;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
 .qsteps li:first-child{border-top:0}
@@ -620,18 +622,19 @@ details.more>.inner{padding:0 18px 18px}
   </div>
   </div></details>
 
-  <details class="more" id="d-teardown"><summary>撤場順序<small>與組裝相反</small></summary><div class="inner">
+  <details class="more" id="d-teardown"><summary>撤場順序<small>第一步：木架先倒放</small></summary><div class="inner">
   <ol>
+    <li class="must"><b>先將木架倒放</b>：2 人一起把整座木架慢慢放倒在地上，再開始拆。不要站著直接拆。</li>
     <li>取下磁鐵，每張 6 顆，直接收回該組的袋子。</li>
     <li>展布依編號捲好，放回同色畫筒：黃 1–4、紅 5–8、藍 9–12、湖水綠 13–16。</li>
-    <li>2 人同時抬下上框 → 拔出立柱 → 拆下框 → 拆開立柱的中段接頭。Z字型先拆上下橫桿，再拆立柱兩端的接頭。</li>
+    <li>拆上框 → 拔出立柱 → 拆下框 → 拆開立柱的中段接頭。Z字型先拆上下橫桿，再拆立柱兩端的接頭。</li>
     <li>依袋上標籤點數後裝袋：連接件、木架、磁鐵 24、畫筒 1。缺件立刻記在標籤上。</li>
   </ol>
   </div></details>
 
   <details class="more" id="d-check"><summary>檢查表<small>組裝完成與撤場時逐項確認</small></summary><div class="inner">
   <p class="sub">勾選只存在這台裝置上，方便現場逐項確認。</p>
-  <ul class="checklist"><li><label for="a1"><input type="checkbox" id="a1">每袋依標籤點清：連接件、木架、磁鐵、畫筒</label></li><li><label for="a2"><input type="checkbox" id="a2">橫桿磁吸點（螺絲頭）全部朝外</label></li><li><label for="a3"><input type="checkbox" id="a3">上下框同一面的磁吸點在同一條垂直線上</label></li><li><label for="a4"><input type="checkbox" id="a4">立柱兩支都插到中段接頭底，長度一致</label></li><li><label for="a5"><input type="checkbox" id="a5">所有接頭插到底，蝶形螺絲都已手鎖緊</label></li><li><label for="a13"><input type="checkbox" id="a13">接頭中間孔：下框朝上、上框朝下</label></li><li><label for="a6"><input type="checkbox" id="a6">框架方正，輕推不晃</label></li><li><label for="a7"><input type="checkbox" id="a7">中段接頭側孔、Z字型兩端的空孔朝內側或背面</label></li><li><label for="a8"><input type="checkbox" id="a8">展布編號正確：日 1–4（黃）、Z 5–8（紅）、口 9–12（藍）、13–16（湖水綠）</label></li><li><label for="a9"><input type="checkbox" id="a9">每張展布上下各 3 顆磁鐵吸好，布面平整</label></li><li><label for="a10"><input type="checkbox" id="a10">兩座口字型分開擺放，不重疊、不互相遮擋</label></li><li><label for="a11"><input type="checkbox" id="a11">走道 ≥ 120 cm，出口與消防設備淨空</label></li><li><label for="a12"><input type="checkbox" id="a12">撤場時磁鐵每袋 24 顆點清，展布捲回畫筒</label></li></ul>
+  <ul class="checklist"><li><label for="a1"><input type="checkbox" id="a1">每袋依標籤點清：連接件、木架、磁鐵、畫筒</label></li><li><label for="a2"><input type="checkbox" id="a2">橫桿磁吸點（螺絲頭）全部朝外</label></li><li><label for="a3"><input type="checkbox" id="a3">上下框同一面的磁吸點在同一條垂直線上</label></li><li><label for="a4"><input type="checkbox" id="a4">立柱兩支都插到中段接頭底，長度一致</label></li><li><label for="a5"><input type="checkbox" id="a5">所有接頭插到底，蝶形螺絲都已手鎖緊</label></li><li><label for="a13"><input type="checkbox" id="a13">接頭中間孔：下框朝上、上框朝下</label></li><li><label for="a6"><input type="checkbox" id="a6">框架方正，輕推不晃</label></li><li><label for="a7"><input type="checkbox" id="a7">中段接頭側孔、Z字型兩端的空孔朝內側或背面</label></li><li><label for="a8"><input type="checkbox" id="a8">展布編號正確：日 1–4（黃）、Z 5–8（紅）、口 9–12（藍）、13–16（湖水綠）</label></li><li><label for="a9"><input type="checkbox" id="a9">每張展布上下各 3 顆磁鐵吸好，布面平整</label></li><li><label for="a10"><input type="checkbox" id="a10">兩座口字型分開擺放，不重疊、不互相遮擋</label></li><li><label for="a11"><input type="checkbox" id="a11">走道 ≥ 120 cm，出口與消防設備淨空</label></li><li><label for="a13"><input type="checkbox" id="a13">撤場第一步：2 人把木架整座倒放在地上，再開始拆</label></li><li><label for="a12"><input type="checkbox" id="a12">撤場時磁鐵每袋 24 顆點清，展布捲回畫筒</label></li></ul>
   </div></details>
 
   <details class="more" id="d-feedback"><summary>問題回饋<small>組裝或撤場遇到問題，在這裡留言</small></summary><div class="inner">
